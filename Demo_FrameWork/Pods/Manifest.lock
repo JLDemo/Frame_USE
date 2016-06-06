@@ -1,12 +1,15 @@
 PODS:
+  - JSQSystemSoundPlayer (2.0.1)
   - Realm (1.0.0):
     - Realm/Headers (= 1.0.0)
   - Realm/Headers (1.0.0)
 
 DEPENDENCIES:
+  - JSQSystemSoundPlayer (~> 2.0)
   - Realm
 
 SPEC CHECKSUMS:
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   Realm: e15cd8e7c11d3e576f628ba0b7cb855269b4991c
 
 COCOAPODS: 0.39.0

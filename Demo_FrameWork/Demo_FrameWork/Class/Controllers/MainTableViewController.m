@@ -8,6 +8,7 @@
 
 #import "MainTableViewController.h"
 #import "RealmViewController.h"
+#import "BaseChatViewController.h"
 
 
 @interface MainTableViewController ()
@@ -28,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.dataSource addObject:@"Realm数据库"];
+    [self.dataSource addObject:@"JSQMessagesVeiwController"];
 }
 
 
@@ -55,6 +57,8 @@
     UIViewController *vc = nil;
     if (indexPath.row == 0) {  // Realm数据库
         vc = [[RealmViewController alloc] init];
+    }else if (indexPath.row == 1) { // JSQMessagesVeiwController
+        vc = [[BaseChatViewController alloc] init];
     }
     
     [self.navigationController pushViewController:vc animated:YES];
