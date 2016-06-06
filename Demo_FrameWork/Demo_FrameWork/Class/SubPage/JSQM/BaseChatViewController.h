@@ -12,7 +12,7 @@
 
 @interface BaseChatViewController : JSQMessagesViewController
 
-@property (strong, nonatomic) DemoModelData *modelData;
+@property (strong, nonatomic) DemoModelData *demoData;
 
 
 @end
