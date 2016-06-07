@@ -1,25 +1,20 @@
 //
-//  MainTableViewController.m
-//  Demo_FrameWork
+//  YYKitViewController.m
+//  Frame_USE
 //
-//  Created by kfz on 16/6/2.
+//  Created by kfz on 16/6/7.
 //  Copyright © 2016年 Jaly. All rights reserved.
 //
 
-#import "MainTableViewController.h"
-#import "RealmViewController.h"
-#import "BaseChatViewController.h"
 #import "YYKitViewController.h"
 
-
-@interface MainTableViewController ()
+@interface YYKitViewController ()
 
 @property (strong, nonatomic) NSMutableArray *titleArray;
 @property (strong, nonatomic) NSMutableArray *classArray;
-
 @end
 
-@implementation MainTableViewController
+@implementation YYKitViewController
 
 - (NSMutableArray *)titleArray {
     if (!_titleArray) {
@@ -38,10 +33,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self addItemTitle:@"Realm数据库" class:@"RealmViewController"];
-    [self addItemTitle:@"JSQMessagesVeiwController" class:@"BaseChatViewController"];
-    [self addItemTitle:@"YYKit框架测试" class:@"YYKitViewController"];
+    [self addItemTitle:@"YYText" class:@"YYTextViewController"];
 }
+
 
 - (void)addItemTitle:(NSString *)title class:(NSString *)class {
     [self.titleArray addObject:title];
@@ -49,15 +43,15 @@
 }
 
 
-#pragma mark - Table view data source
 
+#pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.titleArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *ID = @"ceell_dji";
+    static NSString *ID = @"YYKit_Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
@@ -68,11 +62,10 @@
     return cell;
 }
 
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Class class = NSClassFromString(self.classArray[indexPath.row]);
     UIViewController *vc = [[class alloc] init];
-
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 

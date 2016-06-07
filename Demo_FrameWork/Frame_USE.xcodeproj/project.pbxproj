@@ -63,6 +63,8 @@
 		DBDBC97A1D058287004AAD8C /* BaseChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDBC9791D058287004AAD8C /* BaseChatViewController.m */; };
 		DBDBC97D1D058305004AAD8C /* DemoModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDBC97C1D058305004AAD8C /* DemoModelData.m */; };
 		DBDBC9801D05834E004AAD8C /* NSUserDefaults+DemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDBC97F1D05834E004AAD8C /* NSUserDefaults+DemoSettings.m */; };
+		DBE0E0671D06B00900970452 /* YYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE0E0661D06B00900970452 /* YYTextViewController.m */; };
+		DBE0E06D1D06B09500970452 /* YYKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE0E06C1D06B09500970452 /* YYKitViewController.m */; };
 		DBE1324E1CFFDDC300FC702C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE1324D1CFFDDC300FC702C /* main.m */; };
 		DBE132511CFFDDC300FC702C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE132501CFFDDC300FC702C /* AppDelegate.m */; };
 		DBE132571CFFDDC300FC702C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE132551CFFDDC300FC702C /* Main.storyboard */; };
@@ -205,6 +207,10 @@
 		DBDBC97C1D058305004AAD8C /* DemoModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoModelData.m; sourceTree = "<group>"; };
 		DBDBC97E1D05834E004AAD8C /* NSUserDefaults+DemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+DemoSettings.h"; sourceTree = "<group>"; };
 		DBDBC97F1D05834E004AAD8C /* NSUserDefaults+DemoSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+DemoSettings.m"; sourceTree = "<group>"; };
+		DBE0E0651D06B00900970452 /* YYTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextViewController.h; sourceTree = "<group>"; };
+		DBE0E0661D06B00900970452 /* YYTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextViewController.m; sourceTree = "<group>"; };
+		DBE0E06B1D06B09500970452 /* YYKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKitViewController.h; sourceTree = "<group>"; };
+		DBE0E06C1D06B09500970452 /* YYKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKitViewController.m; sourceTree = "<group>"; };
 		DBE132491CFFDDC300FC702C /* Frame_USE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frame_USE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE1324D1CFFDDC300FC702C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DBE1324F1CFFDDC300FC702C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -270,6 +276,7 @@
 		DBD454951D0506DF00EE528A /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				DBE0E0631D06AFFA00970452 /* YYKit */,
 				DBDBC8E21D05811D004AAD8C /* JSQM */,
 				DBD454961D0506DF00EE528A /* Realm */,
 			);
@@ -475,6 +482,25 @@
 				DBDBC9491D0581EC004AAD8C /* JSQMessagesTypingIndicatorFooterView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DBE0E0631D06AFFA00970452 /* YYKit */ = {
+			isa = PBXGroup;
+			children = (
+				DBE0E0641D06AFFA00970452 /* YYText */,
+				DBE0E06B1D06B09500970452 /* YYKitViewController.h */,
+				DBE0E06C1D06B09500970452 /* YYKitViewController.m */,
+			);
+			path = YYKit;
+			sourceTree = "<group>";
+		};
+		DBE0E0641D06AFFA00970452 /* YYText */ = {
+			isa = PBXGroup;
+			children = (
+				DBE0E0651D06B00900970452 /* YYTextViewController.h */,
+				DBE0E0661D06B00900970452 /* YYTextViewController.m */,
+			);
+			path = YYText;
 			sourceTree = "<group>";
 		};
 		DBE132401CFFDDC300FC702C = {
@@ -773,6 +799,7 @@
 				DBDBC95C1D0581EC004AAD8C /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
 				DBD454A41D05157800EE528A /* TViewController.m in Sources */,
 				DBDBC94B1D0581EC004AAD8C /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
+				DBE0E06D1D06B09500970452 /* YYKitViewController.m in Sources */,
 				DBDBC9621D0581EC004AAD8C /* JSQMessage.m in Sources */,
 				DBDBC9601D0581EC004AAD8C /* JSQLocationMediaItem.m in Sources */,
 				DBE1324E1CFFDDC300FC702C /* main.m in Sources */,
@@ -796,6 +823,7 @@
 				DBDBC94E1D0581EC004AAD8C /* UIColor+JSQMessages.m in Sources */,
 				DBDBC9581D0581EC004AAD8C /* JSQMessagesTimestampFormatter.m in Sources */,
 				DBDBC95B1D0581EC004AAD8C /* JSQMessagesBubblesSizeCalculator.m in Sources */,
+				DBE0E0671D06B00900970452 /* YYTextViewController.m in Sources */,
 				DBDBC9701D0581EC004AAD8C /* JSQMessagesLabel.m in Sources */,
 				DBDBC9571D0581EC004AAD8C /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */,
 				DBDBC9671D0581EC004AAD8C /* JSQMessagesCellTextView.m in Sources */,
