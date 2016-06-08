@@ -22,8 +22,22 @@ static NSString *ID = @"coll_pic_play_cell";
 - (NSMutableArray *)dataSource {
     if (!_dataSource) {
         _dataSource = [NSMutableArray array];
+        // add header image
+        {
+            NSString *imageName = [NSString stringWithFormat:@"0_%d",PIC_Count];
+            UIImage *image = [UIImage imageNamed:imageName];
+            [_dataSource addObject:image];
+        }
+        
         for (NSInteger i=0; i<PIC_Count; i++) {
             NSString *imageName = [NSString stringWithFormat:@"0_%ld",i+1];
+            UIImage *image = [UIImage imageNamed:imageName];
+            [_dataSource addObject:image];
+        }
+        // add footer image
+        // add header image
+        {
+            NSString *imageName = [NSString stringWithFormat:@"0_%d",1];
             UIImage *image = [UIImage imageNamed:imageName];
             [_dataSource addObject:image];
         }
@@ -59,14 +73,12 @@ static NSString *ID = @"coll_pic_play_cell";
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     self.collectionView.pagingEnabled = YES;
-    
+    self.collectionView.showsHorizontalScrollIndicator = NO;
+//    N  ->1  2 3 ……N 1 默认选择页
+    [self showItem:1];
 }
 
 #pragma -mark UICollectionViewDatasource
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 10;
-}
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.dataSource.count;
 }
@@ -75,6 +87,24 @@ static NSString *ID = @"coll_pic_play_cell";
     
     cell.image = self.dataSource[indexPath.item];
     return cell;
+}
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSInteger page = scrollView.contentOffset.x / scrollView.frame.size.width;
+    if (page == 0) { // -> PIC_COUNT
+        [self showItem:PIC_Count];
+    } else if (page == PIC_Count + 1) { // -> 1
+        [self showItem:1];
+    }
+}
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    NSLog(@"%s",__func__);
+}
+
+- (void)showItem:(NSInteger)item {
+    // N  ->1  2 3 ……N 1 默认选择页
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:item inSection:0];
+    [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionRight animated:NO];
+    
 }
 
 
