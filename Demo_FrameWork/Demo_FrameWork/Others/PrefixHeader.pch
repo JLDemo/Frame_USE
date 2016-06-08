@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  Frame_USE
+//
+//  Created by kfz on 16/6/8.
+//  Copyright © 2016年 Jaly. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SC_SIZE [UIScreen mainScreen].bounds.size
+#define SC_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SC_WIDTH  [UIScreen mainScreen].bounds.size.width
+
+#define RandomColor [UIColor colorWithRed:arc4random()%256/255. green:arc4random()%256/255. blue:arc4random()%256/255. alpha:1.]
+
+#endif /* PrefixHeader_pch */
