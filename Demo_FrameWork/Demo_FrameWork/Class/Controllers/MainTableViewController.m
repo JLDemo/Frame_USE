@@ -39,7 +39,8 @@
     [self addItemTitle:@"Realm数据库" class:@"RealmViewController"];
     [self addItemTitle:@"JSQMessagesVeiwController" class:@"BaseChatViewController"];
     [self addItemTitle:@"YYKit框架测试" class:@"YYKitViewController"];  //
-    [self addItemTitle:@"UIScrollView-图片轮播器" class:@"PicPlayViewController"];  // PicPlayViewController
+    [self addItemTitle:@"UIScrollView-图片轮播器" class:@"PicPlayViewController"];  //
+    [self addItemTitle:@"UICollectionView-图片轮播器" class:@"PicPlayCollectionViewController"];  // PicPlayCollectionViewController
 }
 
 - (void)addItemTitle:(NSString *)title class:(NSString *)class {

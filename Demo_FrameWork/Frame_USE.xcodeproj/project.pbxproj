@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DB8403B01D06EB1D008F4F66 /* PicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */; };
 		DB8403B21D06EB7D008F4F66 /* PicPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */; };
+		DB88D2201D07EBBE000AAF18 /* PicPlayCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB88D21E1D07EBBE000AAF18 /* PicPlayCollectionViewController.m */; };
+		DB88D2241D07EF2F000AAF18 /* JLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB88D2231D07EF2F000AAF18 /* JLCell.m */; };
 		DBD454991D05082200EE528A /* RealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD454981D05082200EE528A /* RealmViewController.m */; };
 		DBD4549B1D05147300EE528A /* RealmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD4549A1D05147300EE528A /* RealmViewController.xib */; };
 		DBD454A41D05157800EE528A /* TViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD454A21D05157800EE528A /* TViewController.m */; };
@@ -101,6 +103,10 @@
 		DB8403AE1D06EB1D008F4F66 /* PicPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicPlayViewController.h; sourceTree = "<group>"; };
 		DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicPlayViewController.m; sourceTree = "<group>"; };
 		DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicPlayViewController.xib; sourceTree = "<group>"; };
+		DB88D21D1D07EBBE000AAF18 /* PicPlayCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicPlayCollectionViewController.h; sourceTree = "<group>"; };
+		DB88D21E1D07EBBE000AAF18 /* PicPlayCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicPlayCollectionViewController.m; sourceTree = "<group>"; };
+		DB88D2221D07EF2F000AAF18 /* JLCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLCell.h; sourceTree = "<group>"; };
+		DB88D2231D07EF2F000AAF18 /* JLCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLCell.m; sourceTree = "<group>"; };
 		DBD454971D05082200EE528A /* RealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmViewController.h; sourceTree = "<group>"; };
 		DBD454981D05082200EE528A /* RealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmViewController.m; sourceTree = "<group>"; };
 		DBD4549A1D05147300EE528A /* RealmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RealmViewController.xib; sourceTree = "<group>"; };
@@ -284,6 +290,10 @@
 				DB8403AE1D06EB1D008F4F66 /* PicPlayViewController.h */,
 				DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */,
 				DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */,
+				DB88D21D1D07EBBE000AAF18 /* PicPlayCollectionViewController.h */,
+				DB88D21E1D07EBBE000AAF18 /* PicPlayCollectionViewController.m */,
+				DB88D2221D07EF2F000AAF18 /* JLCell.h */,
+				DB88D2231D07EF2F000AAF18 /* JLCell.m */,
 			);
 			path = "轮播器";
 			sourceTree = "<group>";
@@ -503,9 +513,9 @@
 		DBE0E0631D06AFFA00970452 /* YYKit */ = {
 			isa = PBXGroup;
 			children = (
-				DBE0E0641D06AFFA00970452 /* YYText */,
 				DBE0E06B1D06B09500970452 /* YYKitViewController.h */,
 				DBE0E06C1D06B09500970452 /* YYKitViewController.m */,
+				DBE0E0641D06AFFA00970452 /* YYText */,
 			);
 			path = YYKit;
 			sourceTree = "<group>";
@@ -804,7 +814,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBD454991D05082200EE528A /* RealmViewController.m in Sources */,
+				DB88D2201D07EBBE000AAF18 /* PicPlayCollectionViewController.m in Sources */,
 				DBDBC9661D0581EC004AAD8C /* JSQVideoMediaItem.m in Sources */,
+				DB88D2241D07EF2F000AAF18 /* JLCell.m in Sources */,
 				DBDBC96A1D0581EC004AAD8C /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
 				DBDBC95F1D0581EC004AAD8C /* JSQAudioMediaItem.m in Sources */,
 				DBE132511CFFDDC300FC702C /* AppDelegate.m in Sources */,

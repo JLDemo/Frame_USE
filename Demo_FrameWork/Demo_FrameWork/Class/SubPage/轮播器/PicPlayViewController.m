@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) NSMutableArray *imageArray;
 
+
 @end
 
 @implementation PicPlayViewController

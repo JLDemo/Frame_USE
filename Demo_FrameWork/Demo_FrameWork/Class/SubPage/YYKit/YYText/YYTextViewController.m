@@ -9,6 +9,9 @@
 #import "YYTextViewController.h"
 #import "YYKit.h"
 
+#define  SYS_VERSION [UIDevice systemVersion]
+#define  sVersion7Later (SYS_VERSION>=7)
+
 @interface YYTextViewController ()
 
 @end
@@ -37,7 +40,7 @@
         one.color = [UIColor greenColor];
         NSRange range = [str rangeOfString:@"link"];
         [one setTextHighlightRange:range color:[UIColor yellowColor] backgroundColor:[UIColor whiteColor] tapAction:^(UIView * _Nonnull containerView, NSAttributedString * _Nonnull text, NSRange range, CGRect rect) {
-            [self alertMessage:[text.string substringWithRange:range]];
+            [self showMessage:[text.string substringWithRange:range]];
         }];
         
         
@@ -54,8 +57,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:label];
     //
-    label.text = @"";
-    label.font = nil;
+//    label.text = @"";
+//    label.font = nil;
 }
 
 - (NSMutableAttributedString *)appendString {
@@ -68,6 +71,52 @@
 - (void)alertMessage:(NSString *)str {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"title" message:str delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
     [alert show];
+}
+
+- (void)showMessage:(NSString *)msg {
+    CGSize size = self.view.frame.size;
+    YYLabel *label = [[YYLabel alloc] init];
+    label.width = size.width;
+    label.height = 50;
+    label.backgroundColor = [UIColor greenColor];
+    label.bottom = 0;
+    [self.view addSubview:label];
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        label.top = 0;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.2 delay:2 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            label.bottom = 0;
+        } completion:^(BOOL finished) {
+            [label removeFromSuperview];
+        }];
+    }];
+    
+    /*
+    CGFloat padding = 10;
+    
+    YYLabel *label = [YYLabel new];
+    label.text = msg;
+    label.font = [UIFont systemFontOfSize:16];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor whiteColor];
+    label.backgroundColor = [UIColor colorWithRed:0.033 green:0.685 blue:0.978 alpha:0.730];
+    label.width = self.view.width;
+    label.textContainerInset = UIEdgeInsetsMake(padding, padding, padding, padding);
+    label.height = [msg heightForFont:label.font width:label.width] + 2 * padding;
+    
+    label.bottom = 0;
+    [self.view addSubview:label];
+    [UIView animateWithDuration:0.3 animations:^{
+        label.top = 0;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.2 delay:2 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            label.bottom = 0;
+        } completion:^(BOOL finished) {
+            [label removeFromSuperview];
+        }];
+    }];
+ */
 }
 
 
