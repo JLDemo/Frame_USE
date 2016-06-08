@@ -38,6 +38,7 @@
     
     self.scrollView.delegate = self;
 //    NSLog(@"%f",self.scrollView.contentInset.top);
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)addImage {
@@ -75,7 +76,9 @@
     [self.scrollView addSubview:imgView];
 }
 
+
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSLog(@"%@",NSStringFromCGPoint(self.scrollView.contentOffset));
     CGPoint offSet = scrollView.contentOffset;
     CGSize size = scrollView.frame.size;
     NSInteger page = (scrollView.contentOffset.x+1) / size.width;
