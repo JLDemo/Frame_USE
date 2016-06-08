@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB8403B01D06EB1D008F4F66 /* PicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */; };
+		DB8403B21D06EB7D008F4F66 /* PicPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */; };
 		DBD454991D05082200EE528A /* RealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD454981D05082200EE528A /* RealmViewController.m */; };
 		DBD4549B1D05147300EE528A /* RealmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD4549A1D05147300EE528A /* RealmViewController.xib */; };
 		DBD454A41D05157800EE528A /* TViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD454A21D05157800EE528A /* TViewController.m */; };
@@ -96,6 +98,9 @@
 /* Begin PBXFileReference section */
 		3ACD5885FDFD93949FDFF5D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		79495F2833E2DFC70A769284 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB8403AE1D06EB1D008F4F66 /* PicPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicPlayViewController.h; sourceTree = "<group>"; };
+		DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicPlayViewController.m; sourceTree = "<group>"; };
+		DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicPlayViewController.xib; sourceTree = "<group>"; };
 		DBD454971D05082200EE528A /* RealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmViewController.h; sourceTree = "<group>"; };
 		DBD454981D05082200EE528A /* RealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmViewController.m; sourceTree = "<group>"; };
 		DBD4549A1D05147300EE528A /* RealmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RealmViewController.xib; sourceTree = "<group>"; };
@@ -273,9 +278,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB8403AD1D06EA05008F4F66 /* 轮播器 */ = {
+			isa = PBXGroup;
+			children = (
+				DB8403AE1D06EB1D008F4F66 /* PicPlayViewController.h */,
+				DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */,
+				DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */,
+			);
+			path = "轮播器";
+			sourceTree = "<group>";
+		};
 		DBD454951D0506DF00EE528A /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				DB8403AD1D06EA05008F4F66 /* 轮播器 */,
 				DBE0E0631D06AFFA00970452 /* YYKit */,
 				DBDBC8E21D05811D004AAD8C /* JSQM */,
 				DBD454961D0506DF00EE528A /* Realm */,
@@ -710,6 +726,7 @@
 				DBE132591CFFDDC300FC702C /* Assets.xcassets in Resources */,
 				DBDBC96B1D0581EC004AAD8C /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
 				DBDBC94A1D0581EC004AAD8C /* JSQMessagesAssets.bundle in Resources */,
+				DB8403B21D06EB7D008F4F66 /* PicPlayViewController.xib in Resources */,
 				DBD454A51D05157800EE528A /* TViewController.xib in Resources */,
 				DBDBC9771D0581EC004AAD8C /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
 				DBE132571CFFDDC300FC702C /* Main.storyboard in Resources */,
@@ -801,6 +818,7 @@
 				DBDBC94B1D0581EC004AAD8C /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				DBE0E06D1D06B09500970452 /* YYKitViewController.m in Sources */,
 				DBDBC9621D0581EC004AAD8C /* JSQMessage.m in Sources */,
+				DB8403B01D06EB1D008F4F66 /* PicPlayViewController.m in Sources */,
 				DBDBC9601D0581EC004AAD8C /* JSQLocationMediaItem.m in Sources */,
 				DBE1324E1CFFDDC300FC702C /* main.m in Sources */,
 				DBDBC95A1D0581EC004AAD8C /* JSQAudioMediaViewAttributes.m in Sources */,
