@@ -41,7 +41,8 @@
     [self addItemTitle:@"YYKit框架测试" class:@"YYKitViewController"];  //
     [self addItemTitle:@"UIScrollView-图片轮播器" class:@"PicPlayViewController"];  //
     [self addItemTitle:@"UICollectionView-图片轮播器" class:@"PicPlayCollectionViewController"];  // 
-    [self addItemTitle:@"自定义网易TabBar" class:@"DefTabBarViewController"];  // Def
+    [self addItemTitle:@"自定义网易TabBar" class:@"DefTabBarViewController"];  // 
+    [self addItemTitle:@"图文混排:html方式+CoreText" class:@"StatusViewController"];  // Def
 }
 
 - (void)addItemTitle:(NSString *)title class:(NSString *)class {

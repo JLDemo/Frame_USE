@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB7E26261D0E83A600839CAE /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7E26241D0E83A600839CAE /* StatusViewController.m */; };
+		DB7E26271D0E83A600839CAE /* StatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB7E26251D0E83A600839CAE /* StatusViewController.xib */; };
+		DB7E262B1D0E856A00839CAE /* RCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7E262A1D0E856A00839CAE /* RCLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DB7E262E1D0E865E00839CAE /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7E262D1D0E865E00839CAE /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DB7E26301D0E888B00839CAE /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7E262F1D0E888B00839CAE /* libicucore.tbd */; };
+		DB7E26321D0E914F00839CAE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7E26311D0E914F00839CAE /* CoreText.framework */; };
+		DB7E26351D0E918500839CAE /* CTView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7E26341D0E918500839CAE /* CTView.m */; };
 		DB8403B01D06EB1D008F4F66 /* PicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */; };
 		DB8403B21D06EB7D008F4F66 /* PicPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */; };
 		DB887FA11D0837790024D9A0 /* DefTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB887F9F1D0837790024D9A0 /* DefTabBarViewController.m */; };
@@ -102,6 +109,17 @@
 /* Begin PBXFileReference section */
 		3ACD5885FDFD93949FDFF5D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		79495F2833E2DFC70A769284 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7E26231D0E83A600839CAE /* StatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusViewController.h; sourceTree = "<group>"; };
+		DB7E26241D0E83A600839CAE /* StatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusViewController.m; sourceTree = "<group>"; };
+		DB7E26251D0E83A600839CAE /* StatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusViewController.xib; sourceTree = "<group>"; };
+		DB7E26291D0E856A00839CAE /* RCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCLabel.h; sourceTree = "<group>"; };
+		DB7E262A1D0E856A00839CAE /* RCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCLabel.m; sourceTree = "<group>"; };
+		DB7E262C1D0E865E00839CAE /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		DB7E262D1D0E865E00839CAE /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		DB7E262F1D0E888B00839CAE /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		DB7E26311D0E914F00839CAE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DB7E26331D0E918500839CAE /* CTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTView.h; sourceTree = "<group>"; };
+		DB7E26341D0E918500839CAE /* CTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTView.m; sourceTree = "<group>"; };
 		DB8403AE1D06EB1D008F4F66 /* PicPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicPlayViewController.h; sourceTree = "<group>"; };
 		DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicPlayViewController.m; sourceTree = "<group>"; };
 		DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicPlayViewController.xib; sourceTree = "<group>"; };
@@ -252,6 +270,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7E26321D0E914F00839CAE /* CoreText.framework in Frameworks */,
+				DB7E26301D0E888B00839CAE /* libicucore.tbd in Frameworks */,
 				F743B084AF8F23856795168D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,9 +305,34 @@
 		67C3BB2C8D80A632CB7EEBF1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB7E26311D0E914F00839CAE /* CoreText.framework */,
+				DB7E262F1D0E888B00839CAE /* libicucore.tbd */,
 				79495F2833E2DFC70A769284 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB7E26221D0E839700839CAE /* 图文混排 */ = {
+			isa = PBXGroup;
+			children = (
+				DB7E26231D0E83A600839CAE /* StatusViewController.h */,
+				DB7E26241D0E83A600839CAE /* StatusViewController.m */,
+				DB7E26251D0E83A600839CAE /* StatusViewController.xib */,
+				DB7E26331D0E918500839CAE /* CTView.h */,
+				DB7E26341D0E918500839CAE /* CTView.m */,
+			);
+			path = "图文混排";
+			sourceTree = "<group>";
+		};
+		DB7E26281D0E855A00839CAE /* RCLabel */ = {
+			isa = PBXGroup;
+			children = (
+				DB7E262C1D0E865E00839CAE /* RegexKitLite.h */,
+				DB7E262D1D0E865E00839CAE /* RegexKitLite.m */,
+				DB7E26291D0E856A00839CAE /* RCLabel.h */,
+				DB7E262A1D0E856A00839CAE /* RCLabel.m */,
+			);
+			path = RCLabel;
 			sourceTree = "<group>";
 		};
 		DB8403AD1D06EA05008F4F66 /* 轮播器 */ = {
@@ -317,6 +362,7 @@
 		DBD454951D0506DF00EE528A /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				DB7E26221D0E839700839CAE /* 图文混排 */,
 				DB887F9D1D0837490024D9A0 /* DefTabBar */,
 				DB8403AD1D06EA05008F4F66 /* 轮播器 */,
 				DBE0E0631D06AFFA00970452 /* YYKit */,
@@ -358,6 +404,7 @@
 		DBDBC8E31D058138004AAD8C /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				DB7E26281D0E855A00839CAE /* RCLabel */,
 				DBDBC8E41D058149004AAD8C /* JSQM */,
 			);
 			path = Lib;
@@ -749,6 +796,7 @@
 				DBDBC96D1D0581EC004AAD8C /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
 				DBD4549B1D05147300EE528A /* RealmViewController.xib in Resources */,
 				DBDBC9751D0581EC004AAD8C /* JSQMessagesToolbarContentView.xib in Resources */,
+				DB7E26271D0E83A600839CAE /* StatusViewController.xib in Resources */,
 				DBE1325C1CFFDDC300FC702C /* LaunchScreen.storyboard in Resources */,
 				DBDBC9721D0581EC004AAD8C /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				DBE132591CFFDDC300FC702C /* Assets.xcassets in Resources */,
@@ -839,6 +887,7 @@
 				DBDBC96A1D0581EC004AAD8C /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
 				DBDBC95F1D0581EC004AAD8C /* JSQAudioMediaItem.m in Sources */,
 				DBE132511CFFDDC300FC702C /* AppDelegate.m in Sources */,
+				DB7E262E1D0E865E00839CAE /* RegexKitLite.m in Sources */,
 				DBDBC9741D0581EC004AAD8C /* JSQMessagesToolbarContentView.m in Sources */,
 				DBDBC95E1D0581EC004AAD8C /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
 				DBDBC9531D0581EC004AAD8C /* JSQMessagesViewController.m in Sources */,
@@ -851,6 +900,7 @@
 				DBDBC9621D0581EC004AAD8C /* JSQMessage.m in Sources */,
 				DB8403B01D06EB1D008F4F66 /* PicPlayViewController.m in Sources */,
 				DBDBC9601D0581EC004AAD8C /* JSQLocationMediaItem.m in Sources */,
+				DB7E26261D0E83A600839CAE /* StatusViewController.m in Sources */,
 				DBE1324E1CFFDDC300FC702C /* main.m in Sources */,
 				DBDBC95A1D0581EC004AAD8C /* JSQAudioMediaViewAttributes.m in Sources */,
 				DBDBC9521D0581EC004AAD8C /* JSQMessagesKeyboardController.m in Sources */,
@@ -859,7 +909,9 @@
 				DBDBC9681D0581EC004AAD8C /* JSQMessagesCollectionView.m in Sources */,
 				DBDBC94D1D0581EC004AAD8C /* NSString+JSQMessages.m in Sources */,
 				DBD454B01D0529E900EE528A /* RealmTableViewController.m in Sources */,
+				DB7E26351D0E918500839CAE /* CTView.m in Sources */,
 				DBDBC9551D0581EC004AAD8C /* JSQMessagesAvatarImageFactory.m in Sources */,
+				DB7E262B1D0E856A00839CAE /* RCLabel.m in Sources */,
 				DBDBC9511D0581EC004AAD8C /* UIView+JSQMessages.m in Sources */,
 				DBDBC9501D0581EC004AAD8C /* UIImage+JSQMessages.m in Sources */,
 				DBDBC9641D0581EC004AAD8C /* JSQMessagesBubbleImage.m in Sources */,
@@ -1033,6 +1085,45 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo_FrameWork/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = Demo_FrameWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"JSQSystemSoundPlayer\"",
+					"-l\"Realm\"",
+					"-l\"YYKit\"",
+					"-l\"c++\"",
+					"-l\"realm-ios\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebP\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baidu.www.Frame-use";
 				PRODUCT_NAME = Frame_USE;
 			};
@@ -1046,6 +1137,45 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo_FrameWork/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = Demo_FrameWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"JSQSystemSoundPlayer\"",
+					"-l\"Realm\"",
+					"-l\"YYKit\"",
+					"-l\"c++\"",
+					"-l\"realm-ios\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebP\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baidu.www.Frame-use";
 				PRODUCT_NAME = Frame_USE;
 			};
