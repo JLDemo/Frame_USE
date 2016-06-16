@@ -38,6 +38,8 @@
 		DBC63EC51D1247950034CE94 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC63EC41D1247950034CE94 /* ThirdViewController.m */; };
 		DBC63EC81D1247A00034CE94 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC63EC71D1247A00034CE94 /* FourViewController.m */; };
 		DBC63ECB1D124E3D0034CE94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC63ECA1D124E3D0034CE94 /* ViewController.m */; };
+		DBC63ED31D1262C80034CE94 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC63ED11D1262C80034CE94 /* TestViewController.m */; };
+		DBC63ED41D1262C80034CE94 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC63ED21D1262C80034CE94 /* TestViewController.xib */; };
 		DBD454991D05082200EE528A /* RealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD454981D05082200EE528A /* RealmViewController.m */; };
 		DBD4549B1D05147300EE528A /* RealmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD4549A1D05147300EE528A /* RealmViewController.xib */; };
 		DBD454A41D05157800EE528A /* TViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD454A21D05157800EE528A /* TViewController.m */; };
@@ -182,6 +184,9 @@
 		DBC63EC71D1247A00034CE94 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
 		DBC63EC91D124E3D0034CE94 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DBC63ECA1D124E3D0034CE94 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DBC63ED01D1262C80034CE94 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		DBC63ED11D1262C80034CE94 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		DBC63ED21D1262C80034CE94 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		DBD454971D05082200EE528A /* RealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmViewController.h; sourceTree = "<group>"; };
 		DBD454981D05082200EE528A /* RealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmViewController.m; sourceTree = "<group>"; };
 		DBD4549A1D05147300EE528A /* RealmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RealmViewController.xib; sourceTree = "<group>"; };
@@ -470,9 +475,20 @@
 			path = YPTabBarController;
 			sourceTree = "<group>";
 		};
+		DBC63ECC1D1262AB0034CE94 /* FrameTest */ = {
+			isa = PBXGroup;
+			children = (
+				DBC63ED01D1262C80034CE94 /* TestViewController.h */,
+				DBC63ED11D1262C80034CE94 /* TestViewController.m */,
+				DBC63ED21D1262C80034CE94 /* TestViewController.xib */,
+			);
+			name = FrameTest;
+			sourceTree = "<group>";
+		};
 		DBD454951D0506DF00EE528A /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				DBC63ECC1D1262AB0034CE94 /* FrameTest */,
 				DB736F111D115493000BFE1E /* button3D球形 */,
 				DB736F081D1127A4000BFE1E /* tableView放倒 */,
 				DB7E26221D0E839700839CAE /* 图文混排 */,
@@ -873,6 +889,7 @@
 				TargetAttributes = {
 					DBE132481CFFDDC300FC702C = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = AR8RH55RMX;
 					};
 					DBE132611CFFDDC300FC702C = {
 						CreatedOnToolsVersion = 7.3;
@@ -914,6 +931,7 @@
 				DBDBC9751D0581EC004AAD8C /* JSQMessagesToolbarContentView.xib in Resources */,
 				DB7E26271D0E83A600839CAE /* StatusViewController.xib in Resources */,
 				DBE1325C1CFFDDC300FC702C /* LaunchScreen.storyboard in Resources */,
+				DBC63ED41D1262C80034CE94 /* TestViewController.xib in Resources */,
 				DBDBC9721D0581EC004AAD8C /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				DB736F161D1154B4000BFE1E /* BTViewController.xib in Resources */,
 				DBE132591CFFDDC300FC702C /* Assets.xcassets in Resources */,
@@ -1029,6 +1047,7 @@
 				DBE1324E1CFFDDC300FC702C /* main.m in Sources */,
 				DBC63EBC1D1246D40034CE94 /* RootTabBarViewController.m in Sources */,
 				DBDBC95A1D0581EC004AAD8C /* JSQAudioMediaViewAttributes.m in Sources */,
+				DBC63ED31D1262C80034CE94 /* TestViewController.m in Sources */,
 				DBDBC9521D0581EC004AAD8C /* JSQMessagesKeyboardController.m in Sources */,
 				DBDBC97D1D058305004AAD8C /* DemoModelData.m in Sources */,
 				DBD454A81D05163400EE528A /* ExtensionViewController.m in Sources */,
@@ -1216,8 +1235,10 @@
 			baseConfigurationReference = EA104319D2A9027B30AF6607 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo_FrameWork/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = Demo_FrameWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1268,8 +1289,10 @@
 			baseConfigurationReference = 3ACD5885FDFD93949FDFF5D3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo_FrameWork/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = Demo_FrameWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
