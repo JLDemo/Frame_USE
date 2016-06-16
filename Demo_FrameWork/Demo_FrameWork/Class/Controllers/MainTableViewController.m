@@ -35,21 +35,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+//    [self.navigationController setNavigationBarHidden:YES];
     [self addItemTitle:@"Realm数据库" class:@"RealmViewController"];
     [self addItemTitle:@"JSQMessagesVeiwController" class:@"BaseChatViewController"];
     [self addItemTitle:@"YYKit框架测试" class:@"YYKitViewController"];  //
     [self addItemTitle:@"UIScrollView-图片轮播器" class:@"PicPlayViewController"];  //
     [self addItemTitle:@"UICollectionView-图片轮播器" class:@"PicPlayCollectionViewController"];  // 
-    [self addItemTitle:@"自定义网易TabBar" class:@"DefTabBarViewController"];  // 
-    [self addItemTitle:@"图文混排:html方式+CoreText" class:@"StatusViewController"];  // Def
+    [self addItemTitle:@"自定义网易TabBar" class:@"DefTabBarViewController"];  //
+    [self addItemTitle:@"第三方  tabBar " class:@"RootTabBarViewController"];  //
+    [self addItemTitle:@"图文混排:html方式+CoreText" class:@"StatusViewController"];  //
+    [self addItemTitle:@"tableView放倒" class:@"InvertTableViewController"];  //
+    [self addItemTitle:@"button 球形效果" class:@"BTViewController"];  // BTViewController
 }
 
 - (void)addItemTitle:(NSString *)title class:(NSString *)class {
     [self.titleArray addObject:title];
     [self.classArray addObject:class];
 }
-
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
 
 #pragma mark - Table view data source
 

@@ -7,6 +7,8 @@
 //  自定义tabBar
 
 #import "DefTabBarViewController.h"
+#import "TBButton.h"
+
 
 @interface DefTabBarViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *topScrollView;
@@ -18,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.topScrollView.frame = (CGRect){{30, 64}, {SC_WIDTH, 45}};
     [self addTitleButton];
 }
 
@@ -28,15 +31,21 @@
     CGFloat height = 45;
     CGFloat x = 0;
     CGFloat y = 0;
-    for (NSInteger i=0; i<10; i++) {
+    
+    NSInteger i=0;
+    for (; i<10; i++) {
         x = i * width;
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        NSString *title = [NSString stringWithFormat:@"第%ld个",(long)i];
+        TBButton *btn = [TBButton buttonWithType:UIButtonTypeCustom];
+//        btn.userInteractionEnabled = NO;
         btn.backgroundColor = RandomColor;
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [btn setTitle:title forState:UIControlStateNormal];
         btn.showsTouchWhenHighlighted = NO;
         btn.frame = (CGRect){{x, y}, {width, height}};
         [self.topScrollView addSubview:btn];
     }
+    self.topScrollView.contentSize = (CGSize){i * width, 0};
 }
 
 
