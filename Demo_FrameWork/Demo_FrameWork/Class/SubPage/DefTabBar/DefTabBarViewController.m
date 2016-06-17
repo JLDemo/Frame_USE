@@ -139,9 +139,15 @@
     NSLog(@"%f",indBarWidth);
     indRect.origin.x = (leftIndex + leftScale) * indBarWidth ;
     self.indBar.frame = indRect;
+    
     // 字体动画
     TBButton *leftItem = self.topScrollView.subviews[leftIndex];
     TBButton *rightItem = self.topScrollView.subviews[rightIndex];
+    // 字体“颜色”
+    UIColor *color = TBTitleColor(1 - leftScale);
+    [leftItem setTitleColor:color forState:UIControlStateSelected];
+    [leftItem setTitleColor:color forState:UIControlStateNormal];
+    [rightItem setTitleColor:TBTitleColor((leftScale)) forState:UIControlStateNormal];
     
     CGFloat normalFontSize = NORMAL_FONT.pointSize;
     CGFloat selectedFontSize = SESECTED_FONT.pointSize;

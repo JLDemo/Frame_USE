@@ -16,6 +16,9 @@
 
 #define RandomColor [UIColor colorWithRed:arc4random()%256/255. green:arc4random()%256/255. blue:arc4random()%256/255. alpha:1.]
 
+#define TBTitleColor(value) [UIColor colorWithRed:value green:0. blue:0. alpha:1.]
+
+
 // 自定义tabBar
 #define SESECTED_FONT [UIFont systemFontOfSize:22]
 #define NORMAL_FONT [UIFont systemFontOfSize:17]

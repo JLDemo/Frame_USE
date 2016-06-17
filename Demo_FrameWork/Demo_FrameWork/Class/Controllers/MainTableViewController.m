@@ -49,9 +49,9 @@
     [self addItemTitle:@"TestViewController" class:@"TestViewController"];  // TestViewController
     
     
-    Class class = NSClassFromString(@"DefTabBarViewController");
-    UIViewController *vc = [[class alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+//    Class class = NSClassFromString(@"DefTabBarViewController");
+//    UIViewController *vc = [[class alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)addItemTitle:(NSString *)title class:(NSString *)class {
