@@ -118,6 +118,27 @@
     CGFloat offSetX = scrollView.contentOffset.x;
     NSInteger page = offSetX / scrollView.bounds.size.width;
     
+    /** topScrollView的动画 */
+    [self scrollChange:offSetX];
+}
+
+/** topScrollView的动画 */
+- (void)scrollChange:(float)offSetX {
+    CGFloat topSCWidth = self.topScrollView.frame.size.width;
+    NSInteger leftIndex = offSetX / topSCWidth;
+    if (offSetX < 0 || leftIndex+1 == N) {
+        return;
+    }
+    NSInteger rightIndex = leftIndex + 1;
+    CGFloat leftScale = (offSetX - leftIndex * topSCWidth) / topSCWidth;
+    CGFloat rightScale = 1 - leftScale;
+    NSLog(@"%f",leftScale);
+    // indBar
+    CGRect indRect = self.indBar.frame;
+    CGFloat indBarWidth = indRect.size.width;
+    NSLog(@"%f",indBarWidth);
+    indRect.origin.x = (leftIndex + leftScale) * indBarWidth ;
+    self.indBar.frame = indRect;
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
@@ -133,7 +154,7 @@
     [self topScrollViewAliginCenter:page];
 }
 
-/** topScrollView自动居中 */
+/** indBar、topScrollView自动居中； */
 - (void)topScrollViewAliginCenter:(NSInteger)page {
     // indBar
     CGRect rect = self.indBar.frame;
