@@ -10,6 +10,7 @@
 #import "TBButton.h"
 #define N 6
 
+
 @interface DefTabBarViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *topScrollView;
 @property (weak, nonatomic) TBButton *selectedButton;
@@ -80,7 +81,6 @@
             btn.selected = YES;
         }
 //        btn.userInteractionEnabled = NO;
-        btn.backgroundColor = [UIColor groupTableViewBackgroundColor];
         btn.tag = i;
         [btn addTarget:self action:@selector(titleButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -118,11 +118,11 @@
     CGFloat offSetX = scrollView.contentOffset.x;
     NSInteger page = offSetX / scrollView.bounds.size.width;
     
-    /** topScrollView的动画 */
+    /** indBar的动画，字体动画 */
     [self scrollChange:offSetX];
 }
 
-/** topScrollView的动画 */
+/** indBar的动画，字体动画 */
 - (void)scrollChange:(float)offSetX {
     CGFloat topSCWidth = self.topScrollView.frame.size.width;
     NSInteger leftIndex = offSetX / topSCWidth;
@@ -131,14 +131,28 @@
     }
     NSInteger rightIndex = leftIndex + 1;
     CGFloat leftScale = (offSetX - leftIndex * topSCWidth) / topSCWidth;
-    CGFloat rightScale = 1 - leftScale;
-    NSLog(@"%f",leftScale);
+//    CGFloat rightScale = 1 - leftScale;
+//    NSLog(@"%f",leftScale);
     // indBar
     CGRect indRect = self.indBar.frame;
     CGFloat indBarWidth = indRect.size.width;
     NSLog(@"%f",indBarWidth);
     indRect.origin.x = (leftIndex + leftScale) * indBarWidth ;
     self.indBar.frame = indRect;
+    // 字体动画
+    TBButton *leftItem = self.topScrollView.subviews[leftIndex];
+    TBButton *rightItem = self.topScrollView.subviews[rightIndex];
+    
+    CGFloat normalFontSize = NORMAL_FONT.pointSize;
+    CGFloat selectedFontSize = SESECTED_FONT.pointSize;
+    // r 为放缩因子 scale*r
+    CGFloat r = ( selectedFontSize - normalFontSize ) / 17;
+    
+    CGFloat  l_Scale = 1 + r - leftScale * r;
+    CGFloat r_Scale = 1 + leftScale * r;
+    leftItem.transform = CGAffineTransformMakeScale(l_Scale, l_Scale);
+    rightItem.transform = CGAffineTransformMakeScale(r_Scale, r_Scale);
+
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
@@ -171,10 +185,14 @@
     if (rect.origin.x >= boderDistance && (self.topScrollView.contentSize.width - CGRectGetMaxX(rect) )>= boderDistance ) {
         // 可以居中
         rect.origin.x -= boderDistance;
+        rect.size.width = self.topScrollView.frame.size.width;
         
+        [self.topScrollView scrollRectToVisible:rect animated:YES];
+        /*
         [UIView animateWithDuration:0.26 animations:^{
             self.topScrollView.contentOffset = rect.origin;
         }];
+         */
     } else if ( rect.origin.x < boderDistance ) { // scrollView左侧
         CGRect frame = self.topScrollView.subviews[0].frame;
         [self.topScrollView scrollRectToVisible:frame animated:YES];
