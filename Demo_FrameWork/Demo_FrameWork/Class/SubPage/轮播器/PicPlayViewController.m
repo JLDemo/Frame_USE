@@ -40,6 +40,8 @@
     self.scrollView.delegate = self;
 //    NSLog(@"%f",self.scrollView.contentInset.top);
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    
 }
 
 - (void)addImage {

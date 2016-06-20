@@ -14,6 +14,9 @@
 @property (strong, nonatomic) NSMutableArray *dataSource;
 
 @property (weak, nonatomic) UICollectionView *collectionView;
+@property (assign, nonatomic) NSUInteger currentIndex;
+@property (strong, nonatomic) NSTimer *timer;
+@property (assign, nonatomic, getter=isScrolling) BOOL scrolling;
 @end
 
 static NSString *ID = @"coll_pic_play_cell";
@@ -53,7 +56,6 @@ static NSString *ID = @"coll_pic_play_cell";
         layout.itemSize = (CGSize){[UIScreen mainScreen].bounds.size.width, 200};
         layout.minimumLineSpacing = 0;
         
-        
         CGRect rect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 200);
         UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:layout];
         [self.view addSubview:collectionView];
@@ -75,7 +77,23 @@ static NSString *ID = @"coll_pic_play_cell";
     self.collectionView.pagingEnabled = YES;
     self.collectionView.showsHorizontalScrollIndicator = NO;
 //    N  ->1  2 3 ……N 1 默认选择页
-    [self showItem:1];
+    self.currentIndex = 1;
+    [self showItem:self.currentIndex animated:NO];
+    
+    // 定时器
+    self.timer = [NSTimer timerWithTimeInterval:1.2 target:self selector:@selector(nextItem) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+}
+
+- (void)nextItem {
+//    if (self.currentIndex % PIC_Count == 0) {
+//        self.currentIndex = 0;
+//    }
+    
+    self.currentIndex ++;
+    if (self.currentIndex <= PIC_Count+1 ) {
+        [self showItem:self.currentIndex animated:YES];
+    }
 }
 
 #pragma -mark UICollectionViewDatasource
@@ -88,23 +106,34 @@ static NSString *ID = @"coll_pic_play_cell";
     cell.image = self.dataSource[indexPath.item];
     return cell;
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"%ld",indexPath.item);
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+}
+
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSInteger page = scrollView.contentOffset.x / scrollView.frame.size.width;
     if (page == 0) { // -> PIC_COUNT
-        [self showItem:PIC_Count];
+        [self showItem:PIC_Count animated:NO];
     } else if (page == PIC_Count + 1) { // -> 1
-        [self showItem:1];
+        [self showItem:1 animated:NO];
     }
 }
+
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    NSLog(@"%s",__func__);
+    
+    [self scrollViewDidEndDecelerating:scrollView];
 }
 
-- (void)showItem:(NSInteger)item {
+- (void)showItem:(NSInteger)item animated:(BOOL)animated {
     // N  ->1  2 3 ……N 1 默认选择页
+    self.currentIndex = item;
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:item inSection:0];
-    [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionRight animated:NO];
-    
+    [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionRight animated:animated];
 }
 
 
