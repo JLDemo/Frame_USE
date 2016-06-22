@@ -23,6 +23,7 @@
 		DB7E26381D0E9FD100839CAE /* MarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7E26371D0E9FD100839CAE /* MarkupParser.m */; };
 		DB8020071D1A6882004B6516 /* LoadIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8020061D1A6882004B6516 /* LoadIndicatorViewController.m */; };
 		DB80200A1D1A6897004B6516 /* LoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8020091D1A6897004B6516 /* LoadView.m */; };
+		DB8020111D1A7F98004B6516 /* PersentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8020101D1A7F98004B6516 /* PersentView.m */; };
 		DB8403B01D06EB1D008F4F66 /* PicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */; };
 		DB8403B21D06EB7D008F4F66 /* PicPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */; };
 		DB887FA11D0837790024D9A0 /* DefTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB887F9F1D0837790024D9A0 /* DefTabBarViewController.m */; };
@@ -160,6 +161,8 @@
 		DB8020061D1A6882004B6516 /* LoadIndicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadIndicatorViewController.m; sourceTree = "<group>"; };
 		DB8020081D1A6897004B6516 /* LoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadView.h; sourceTree = "<group>"; };
 		DB8020091D1A6897004B6516 /* LoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadView.m; sourceTree = "<group>"; };
+		DB80200F1D1A7F98004B6516 /* PersentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersentView.h; sourceTree = "<group>"; };
+		DB8020101D1A7F98004B6516 /* PersentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersentView.m; sourceTree = "<group>"; };
 		DB8403AE1D06EB1D008F4F66 /* PicPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicPlayViewController.h; sourceTree = "<group>"; };
 		DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicPlayViewController.m; sourceTree = "<group>"; };
 		DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicPlayViewController.xib; sourceTree = "<group>"; };
@@ -434,10 +437,19 @@
 			children = (
 				DB8020051D1A6882004B6516 /* LoadIndicatorViewController.h */,
 				DB8020061D1A6882004B6516 /* LoadIndicatorViewController.m */,
+				DB80200F1D1A7F98004B6516 /* PersentView.h */,
+				DB8020101D1A7F98004B6516 /* PersentView.m */,
 				DB8020081D1A6897004B6516 /* LoadView.h */,
 				DB8020091D1A6897004B6516 /* LoadView.m */,
 			);
 			name = loadIndicator;
+			sourceTree = "<group>";
+		};
+		DB80200B1D1A7F28004B6516 /* 环形 百分比 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "环形 百分比";
 			sourceTree = "<group>";
 		};
 		DB8403AD1D06EA05008F4F66 /* 轮播器 */ = {
@@ -522,6 +534,7 @@
 		DBD454951D0506DF00EE528A /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				DB80200B1D1A7F28004B6516 /* 环形 百分比 */,
 				DB8020041D1A686B004B6516 /* loadIndicator */,
 				DB8AE6F51D19354B00B28713 /* 评分 */,
 				DBC63ECC1D1262AB0034CE94 /* FrameTest */,
@@ -1122,6 +1135,7 @@
 				DB887FA11D0837790024D9A0 /* DefTabBarViewController.m in Sources */,
 				DBDBC96C1D0581EC004AAD8C /* JSQMessagesCollectionViewCellOutgoing.m in Sources */,
 				DBC63EB91D1246BB0034CE94 /* YPTabItem.m in Sources */,
+				DB8020111D1A7F98004B6516 /* PersentView.m in Sources */,
 				DB8020071D1A6882004B6516 /* LoadIndicatorViewController.m in Sources */,
 				DBC63EB71D1246BB0034CE94 /* YPTabBar.m in Sources */,
 				DBDBC9731D0581EC004AAD8C /* JSQMessagesMediaPlaceholderView.m in Sources */,

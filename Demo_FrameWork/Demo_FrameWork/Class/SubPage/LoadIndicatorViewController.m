@@ -8,15 +8,26 @@
 
 #import "LoadIndicatorViewController.h"
 #import "LoadView.h"
+#import "PersentView.h"
 
 
 @interface LoadIndicatorViewController ()
 @property (weak, nonatomic) LoadView *idcView;
+@property (weak, nonatomic) PersentView *perView;
 
 @property (weak, nonatomic) UISlider *slider;
 @end
 
 @implementation LoadIndicatorViewController
+
+- (PersentView *)perView {
+    if (!_perView) {
+        PersentView *view = [[PersentView alloc] initWithFrame:CGRectMake(180, 100, 150, 180)];
+        [self.view addSubview:view];
+        _perView = view;
+    }
+    return _perView;
+}
 
 - (UISlider *)slider {
     if (!_slider) {
@@ -31,7 +42,7 @@
 }
 - (LoadView *)idcView {
     if (!_idcView) {
-        LoadView *view = [[LoadView alloc] initWithFrame:CGRectMake(40, 100, 150, 260)];
+        LoadView *view = [[LoadView alloc] initWithFrame:CGRectMake(20, 100, 150, 180)];
         [self.view addSubview:view];
         _idcView = view;
     }
@@ -42,6 +53,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self idcView];
+    [self perView];
     [self slider];
     
     [self.slider addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
@@ -49,6 +61,7 @@
 
 - (void)valueChanged:(UISlider *)sender {
     self.idcView.value = sender.value;
+    self.perView.value = sender.value;
 }
 
 
