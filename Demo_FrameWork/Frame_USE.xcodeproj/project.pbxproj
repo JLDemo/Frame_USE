@@ -27,6 +27,8 @@
 		DB887FA21D0837790024D9A0 /* DefTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB887FA01D0837790024D9A0 /* DefTabBarViewController.xib */; };
 		DB88D2201D07EBBE000AAF18 /* PicPlayCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB88D21E1D07EBBE000AAF18 /* PicPlayCollectionViewController.m */; };
 		DB88D2241D07EF2F000AAF18 /* JLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB88D2231D07EF2F000AAF18 /* JLCell.m */; };
+		DB8AE6F81D19357E00B28713 /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8AE6F71D19357E00B28713 /* ScoreViewController.m */; };
+		DB8AE6FB1D1935A600B28713 /* ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8AE6FA1D1935A600B28713 /* ScoreView.m */; };
 		DBC63EAB1D122F570034CE94 /* js.html in Resources */ = {isa = PBXBuildFile; fileRef = DBC63EAA1D122F570034CE94 /* js.html */; };
 		DBC63EAE1D123F300034CE94 /* TBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC63EAD1D123F300034CE94 /* TBButton.m */; };
 		DBC63EB71D1246BB0034CE94 /* YPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC63EB21D1246BB0034CE94 /* YPTabBar.m */; };
@@ -163,6 +165,10 @@
 		DB88D21E1D07EBBE000AAF18 /* PicPlayCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicPlayCollectionViewController.m; sourceTree = "<group>"; };
 		DB88D2221D07EF2F000AAF18 /* JLCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLCell.h; sourceTree = "<group>"; };
 		DB88D2231D07EF2F000AAF18 /* JLCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLCell.m; sourceTree = "<group>"; };
+		DB8AE6F61D19357E00B28713 /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		DB8AE6F71D19357E00B28713 /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
+		DB8AE6F91D1935A600B28713 /* ScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreView.h; sourceTree = "<group>"; };
+		DB8AE6FA1D1935A600B28713 /* ScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreView.m; sourceTree = "<group>"; };
 		DBC63EAA1D122F570034CE94 /* js.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = js.html; sourceTree = "<group>"; };
 		DBC63EAC1D123F300034CE94 /* TBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBButton.h; sourceTree = "<group>"; };
 		DBC63EAD1D123F300034CE94 /* TBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBButton.m; sourceTree = "<group>"; };
@@ -444,6 +450,17 @@
 			path = DefTabBar;
 			sourceTree = "<group>";
 		};
+		DB8AE6F51D19354B00B28713 /* 评分 */ = {
+			isa = PBXGroup;
+			children = (
+				DB8AE6F61D19357E00B28713 /* ScoreViewController.h */,
+				DB8AE6F71D19357E00B28713 /* ScoreViewController.m */,
+				DB8AE6F91D1935A600B28713 /* ScoreView.h */,
+				DB8AE6FA1D1935A600B28713 /* ScoreView.m */,
+			);
+			name = "评分";
+			sourceTree = "<group>";
+		};
 		DBC63EAF1D1246960034CE94 /* ThirdTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -488,6 +505,7 @@
 		DBD454951D0506DF00EE528A /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				DB8AE6F51D19354B00B28713 /* 评分 */,
 				DBC63ECC1D1262AB0034CE94 /* FrameTest */,
 				DB736F111D115493000BFE1E /* button3D球形 */,
 				DB736F081D1127A4000BFE1E /* tableView放倒 */,
@@ -1039,6 +1057,7 @@
 				DBDBC94B1D0581EC004AAD8C /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				DBE0E06D1D06B09500970452 /* YYKitViewController.m in Sources */,
 				DB736F0F1D112D20000BFE1E /* JLTVCell.m in Sources */,
+				DB8AE6F81D19357E00B28713 /* ScoreViewController.m in Sources */,
 				DBDBC9621D0581EC004AAD8C /* JSQMessage.m in Sources */,
 				DB8403B01D06EB1D008F4F66 /* PicPlayViewController.m in Sources */,
 				DBC63ECB1D124E3D0034CE94 /* ViewController.m in Sources */,
@@ -1059,6 +1078,7 @@
 				DBDBC9551D0581EC004AAD8C /* JSQMessagesAvatarImageFactory.m in Sources */,
 				DBC63EC21D12478A0034CE94 /* SecondViewController.m in Sources */,
 				DB736F191D1154CA000BFE1E /* JL3DView.m in Sources */,
+				DB8AE6FB1D1935A600B28713 /* ScoreView.m in Sources */,
 				DB736F0B1D1127D4000BFE1E /* InvertTableViewController.m in Sources */,
 				DB7E262B1D0E856A00839CAE /* RCLabel.m in Sources */,
 				DBDBC9511D0581EC004AAD8C /* UIView+JSQMessages.m in Sources */,

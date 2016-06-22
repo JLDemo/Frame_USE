@@ -46,12 +46,13 @@
     [self addItemTitle:@"图文混排:html方式+CoreText" class:@"StatusViewController"];  //
     [self addItemTitle:@"tableView放倒" class:@"InvertTableViewController"];  //
     [self addItemTitle:@"button 球形效果" class:@"BTViewController"];  //
-    [self addItemTitle:@"TestViewController" class:@"TestViewController"];  // TestViewController
+    [self addItemTitle:@"TestViewController" class:@"TestViewController"];  //
+    [self addItemTitle:@"星级评价" class:@"ScoreViewController"];  // ScoreViewController
     
     
-//    Class class = NSClassFromString(@"DefTabBarViewController");
-//    UIViewController *vc = [[class alloc] init];
-//    [self.navigationController pushViewController:vc animated:YES];
+    Class class = NSClassFromString(@"ScoreViewController");
+    UIViewController *vc = [[class alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)addItemTitle:(NSString *)title class:(NSString *)class {
