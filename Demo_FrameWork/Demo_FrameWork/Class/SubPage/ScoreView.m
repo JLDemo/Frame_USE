@@ -21,12 +21,29 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self drawStar];
+//        [self addRedLayer];
     }
     return self;
 }
 - (void)awakeFromNib {
     [super awakeFromNib];
     [self drawStar];
+}
+
+- (void)addRedLayer {
+    CAShapeLayer *redLayer = [CAShapeLayer layer];
+    redLayer.lineWidth = 1.2;
+    [self.layer addSublayer:redLayer];
+    
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathAddRect(path, nil, self.bounds);
+    CGPathAddRect(path, nil, CGRectMake(20, 10, 30, 30));
+    
+    redLayer.path = path;
+//    redLayer.fillRule = kCAFillRuleEvenOdd;
+    redLayer.fillColor = [UIColor redColor].CGColor;
+    
+    [self.layer addSublayer:redLayer];
 }
 
 - (void)drawStar {
@@ -44,10 +61,13 @@
     CAShapeLayer *bgLayer = [CAShapeLayer layer];
     bgLayer.path = bgPath.CGPath;
     bgLayer.strokeColor = [UIColor orangeColor].CGColor;
+
     bgLayer.fillColor = [UIColor orangeColor].CGColor;
     bgLayer.lineWidth = size.height;
     [self.layer addSublayer:bgLayer];
     self.backGroundLayer = bgLayer;
+    
+    
     
     // 画五角星
     UIBezierPath *starPath = [UIBezierPath bezierPath];
