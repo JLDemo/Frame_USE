@@ -49,12 +49,13 @@
     [self addItemTitle:@"TestViewController" class:@"TestViewController"];  //
     [self addItemTitle:@"星级评价" class:@"ScoreViewController"];  // ScoreViewController
     [self addItemTitle:@"❤️型/环形百分比,加载指示器" class:@"LoadIndicatorViewController"]; //
+    [self addItemTitle:@"环形按钮" class:@"CircleBtnViewController"]; // CircleBtnViewController
     
     
     
-    Class class = NSClassFromString(@"LoadIndicatorViewController");
-    UIViewController *vc = [[class alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+//    Class class = NSClassFromString(@"CircleBtnViewController");
+//    UIViewController *vc = [[class alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)addItemTitle:(NSString *)title class:(NSString *)class {

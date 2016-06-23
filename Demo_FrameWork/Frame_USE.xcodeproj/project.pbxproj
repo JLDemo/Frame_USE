@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0D278C1D1B6FC00030E293 /* CircleBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0D278B1D1B6FC00030E293 /* CircleBtnViewController.m */; };
 		DB736F0B1D1127D4000BFE1E /* InvertTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB736F0A1D1127D4000BFE1E /* InvertTableViewController.m */; };
 		DB736F0F1D112D20000BFE1E /* JLTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB736F0D1D112D20000BFE1E /* JLTVCell.m */; };
 		DB736F101D112D20000BFE1E /* JLTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB736F0E1D112D20000BFE1E /* JLTVCell.xib */; };
@@ -134,6 +135,8 @@
 /* Begin PBXFileReference section */
 		3ACD5885FDFD93949FDFF5D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		79495F2833E2DFC70A769284 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0D278A1D1B6FC00030E293 /* CircleBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleBtnViewController.h; sourceTree = "<group>"; };
+		DB0D278B1D1B6FC00030E293 /* CircleBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleBtnViewController.m; sourceTree = "<group>"; };
 		DB736F091D1127D4000BFE1E /* InvertTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvertTableViewController.h; sourceTree = "<group>"; };
 		DB736F0A1D1127D4000BFE1E /* InvertTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvertTableViewController.m; sourceTree = "<group>"; };
 		DB736F0C1D112D20000BFE1E /* JLTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLTVCell.h; sourceTree = "<group>"; };
@@ -445,11 +448,13 @@
 			name = loadIndicator;
 			sourceTree = "<group>";
 		};
-		DB80200B1D1A7F28004B6516 /* 环形 百分比 */ = {
+		DB80200B1D1A7F28004B6516 /* 环形按钮 */ = {
 			isa = PBXGroup;
 			children = (
+				DB0D278A1D1B6FC00030E293 /* CircleBtnViewController.h */,
+				DB0D278B1D1B6FC00030E293 /* CircleBtnViewController.m */,
 			);
-			name = "环形 百分比";
+			name = "环形按钮";
 			sourceTree = "<group>";
 		};
 		DB8403AD1D06EA05008F4F66 /* 轮播器 */ = {
@@ -534,7 +539,7 @@
 		DBD454951D0506DF00EE528A /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
-				DB80200B1D1A7F28004B6516 /* 环形 百分比 */,
+				DB80200B1D1A7F28004B6516 /* 环形按钮 */,
 				DB8020041D1A686B004B6516 /* loadIndicator */,
 				DB8AE6F51D19354B00B28713 /* 评分 */,
 				DBC63ECC1D1262AB0034CE94 /* FrameTest */,
@@ -1087,6 +1092,7 @@
 				DBC63EAE1D123F300034CE94 /* TBButton.m in Sources */,
 				DBD454A41D05157800EE528A /* TViewController.m in Sources */,
 				DBDBC94B1D0581EC004AAD8C /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
+				DB0D278C1D1B6FC00030E293 /* CircleBtnViewController.m in Sources */,
 				DBE0E06D1D06B09500970452 /* YYKitViewController.m in Sources */,
 				DB736F0F1D112D20000BFE1E /* JLTVCell.m in Sources */,
 				DB8AE6F81D19357E00B28713 /* ScoreViewController.m in Sources */,
