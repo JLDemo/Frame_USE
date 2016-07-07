@@ -26,6 +26,8 @@
 		DB8020071D1A6882004B6516 /* LoadIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8020061D1A6882004B6516 /* LoadIndicatorViewController.m */; };
 		DB80200A1D1A6897004B6516 /* LoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8020091D1A6897004B6516 /* LoadView.m */; };
 		DB8020111D1A7F98004B6516 /* PersentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8020101D1A7F98004B6516 /* PersentView.m */; };
+		DB81C5181D2E36370086B6FF /* DowFamiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81C5161D2E36370086B6FF /* DowFamiViewController.m */; };
+		DB81C5191D2E36370086B6FF /* DowFamiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB81C5171D2E36370086B6FF /* DowFamiViewController.xib */; };
 		DB8403B01D06EB1D008F4F66 /* PicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */; };
 		DB8403B21D06EB7D008F4F66 /* PicPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */; };
 		DB887FA11D0837790024D9A0 /* DefTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB887F9F1D0837790024D9A0 /* DefTabBarViewController.m */; };
@@ -164,6 +166,9 @@
 		DB8020091D1A6897004B6516 /* LoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadView.m; sourceTree = "<group>"; };
 		DB80200F1D1A7F98004B6516 /* PersentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersentView.h; sourceTree = "<group>"; };
 		DB8020101D1A7F98004B6516 /* PersentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersentView.m; sourceTree = "<group>"; };
+		DB81C5151D2E36370086B6FF /* DowFamiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DowFamiViewController.h; sourceTree = "<group>"; };
+		DB81C5161D2E36370086B6FF /* DowFamiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DowFamiViewController.m; sourceTree = "<group>"; };
+		DB81C5171D2E36370086B6FF /* DowFamiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DowFamiViewController.xib; sourceTree = "<group>"; };
 		DB8403AE1D06EB1D008F4F66 /* PicPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicPlayViewController.h; sourceTree = "<group>"; };
 		DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicPlayViewController.m; sourceTree = "<group>"; };
 		DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicPlayViewController.xib; sourceTree = "<group>"; };
@@ -451,6 +456,16 @@
 			name = "环形按钮";
 			sourceTree = "<group>";
 		};
+		DB81C5141D2E36070086B6FF /* 下载字体 */ = {
+			isa = PBXGroup;
+			children = (
+				DB81C5151D2E36370086B6FF /* DowFamiViewController.h */,
+				DB81C5161D2E36370086B6FF /* DowFamiViewController.m */,
+				DB81C5171D2E36370086B6FF /* DowFamiViewController.xib */,
+			);
+			name = "下载字体";
+			sourceTree = "<group>";
+		};
 		DB8403AD1D06EA05008F4F66 /* 轮播器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +548,7 @@
 		DBD454951D0506DF00EE528A /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				DB81C5141D2E36070086B6FF /* 下载字体 */,
 				DB80200B1D1A7F28004B6516 /* 环形按钮 */,
 				DB8020041D1A686B004B6516 /* loadIndicator */,
 				DB8AE6F51D19354B00B28713 /* 评分 */,
@@ -959,6 +975,7 @@
 			files = (
 				DBDBC96D1D0581EC004AAD8C /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
 				DBDBC9751D0581EC004AAD8C /* JSQMessagesToolbarContentView.xib in Resources */,
+				DB81C5191D2E36370086B6FF /* DowFamiViewController.xib in Resources */,
 				DB7E26271D0E83A600839CAE /* StatusViewController.xib in Resources */,
 				DBE1325C1CFFDDC300FC702C /* LaunchScreen.storyboard in Resources */,
 				DBC63ED41D1262C80034CE94 /* TestViewController.xib in Resources */,
@@ -1105,6 +1122,7 @@
 				DBDBC95B1D0581EC004AAD8C /* JSQMessagesBubblesSizeCalculator.m in Sources */,
 				DBE0E0671D06B00900970452 /* YYTextViewController.m in Sources */,
 				DBDBC9701D0581EC004AAD8C /* JSQMessagesLabel.m in Sources */,
+				DB81C5181D2E36370086B6FF /* DowFamiViewController.m in Sources */,
 				DBC63EBF1D1247700034CE94 /* FirstViewController.m in Sources */,
 				DBDBC9571D0581EC004AAD8C /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */,
 				DBDBC9671D0581EC004AAD8C /* JSQMessagesCellTextView.m in Sources */,
