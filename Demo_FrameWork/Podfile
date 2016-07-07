@@ -1,7 +1,8 @@
-platform :ios, '8.0'
+# Uncomment this line to define a global platform for your project
+platform :ios, '7.0'
 
-pod 'Realm'
-pod 'JSQSystemSoundPlayer', '~> 2.0'
-pod 'YYKit'
+target 'Frame_USE' do
+    pod 'JSQSystemSoundPlayer', '~> 2.0'
+    pod 'YYKit'
 
-
+end

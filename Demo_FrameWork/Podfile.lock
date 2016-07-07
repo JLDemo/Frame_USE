@@ -1,20 +1,17 @@
 PODS:
   - JSQSystemSoundPlayer (2.0.1)
-  - Realm (1.0.0):
-    - Realm/Headers (= 1.0.0)
-  - Realm/Headers (1.0.0)
-  - YYKit (1.0.6):
-    - YYKit/no-arc (= 1.0.6)
-  - YYKit/no-arc (1.0.6)
+  - YYKit (1.0.7):
+    - YYKit/no-arc (= 1.0.7)
+  - YYKit/no-arc (1.0.7)
 
 DEPENDENCIES:
   - JSQSystemSoundPlayer (~> 2.0)
-  - Realm
   - YYKit
 
 SPEC CHECKSUMS:
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
-  Realm: e15cd8e7c11d3e576f628ba0b7cb855269b4991c
-  YYKit: a80c77ab7be226ebe539ef1495dfc25d5766d61e
+  YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: e5b5ca4e001419508dbcb5166518ed6834d2f145
+
+COCOAPODS: 1.0.1

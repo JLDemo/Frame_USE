@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64F3F5DC6EC05B43722B25C5 /* libPods-Frame_USE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0792C4B33FEA3829F9E7AB2 /* libPods-Frame_USE.a */; };
 		DB0D278C1D1B6FC00030E293 /* CircleBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0D278B1D1B6FC00030E293 /* CircleBtnViewController.m */; };
 		DB736F0B1D1127D4000BFE1E /* InvertTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB736F0A1D1127D4000BFE1E /* InvertTableViewController.m */; };
 		DB736F0F1D112D20000BFE1E /* JLTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB736F0D1D112D20000BFE1E /* JLTVCell.m */; };
@@ -46,13 +47,8 @@
 		DBC63ECB1D124E3D0034CE94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC63ECA1D124E3D0034CE94 /* ViewController.m */; };
 		DBC63ED31D1262C80034CE94 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC63ED11D1262C80034CE94 /* TestViewController.m */; };
 		DBC63ED41D1262C80034CE94 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC63ED21D1262C80034CE94 /* TestViewController.xib */; };
-		DBD454991D05082200EE528A /* RealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD454981D05082200EE528A /* RealmViewController.m */; };
-		DBD4549B1D05147300EE528A /* RealmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD4549A1D05147300EE528A /* RealmViewController.xib */; };
 		DBD454A41D05157800EE528A /* TViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD454A21D05157800EE528A /* TViewController.m */; };
 		DBD454A51D05157800EE528A /* TViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD454A31D05157800EE528A /* TViewController.xib */; };
-		DBD454A81D05163400EE528A /* ExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD454A71D05163400EE528A /* ExtensionViewController.m */; };
-		DBD454AB1D0518A600EE528A /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD454AA1D0518A600EE528A /* Book.m */; };
-		DBD454B01D0529E900EE528A /* RealmTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD454AF1D0529E900EE528A /* RealmTableViewController.m */; };
 		DBDBC94A1D0581EC004AAD8C /* JSQMessagesAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DBDBC8E71D0581EC004AAD8C /* JSQMessagesAssets.bundle */; };
 		DBDBC94B1D0581EC004AAD8C /* JSQSystemSoundPlayer+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDBC8EA1D0581EC004AAD8C /* JSQSystemSoundPlayer+JSQMessages.m */; };
 		DBDBC94C1D0581EC004AAD8C /* NSBundle+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDBC8EC1D0581EC004AAD8C /* NSBundle+JSQMessages.m */; };
@@ -135,6 +131,8 @@
 /* Begin PBXFileReference section */
 		3ACD5885FDFD93949FDFF5D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		79495F2833E2DFC70A769284 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7242682FD739506A8732B5 /* Pods-Frame_USE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frame_USE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Frame_USE/Pods-Frame_USE.debug.xcconfig"; sourceTree = "<group>"; };
+		C0792C4B33FEA3829F9E7AB2 /* libPods-Frame_USE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frame_USE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0D278A1D1B6FC00030E293 /* CircleBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleBtnViewController.h; sourceTree = "<group>"; };
 		DB0D278B1D1B6FC00030E293 /* CircleBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleBtnViewController.m; sourceTree = "<group>"; };
 		DB736F091D1127D4000BFE1E /* InvertTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvertTableViewController.h; sourceTree = "<group>"; };
@@ -205,18 +203,9 @@
 		DBC63ED01D1262C80034CE94 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		DBC63ED11D1262C80034CE94 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		DBC63ED21D1262C80034CE94 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
-		DBD454971D05082200EE528A /* RealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmViewController.h; sourceTree = "<group>"; };
-		DBD454981D05082200EE528A /* RealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmViewController.m; sourceTree = "<group>"; };
-		DBD4549A1D05147300EE528A /* RealmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RealmViewController.xib; sourceTree = "<group>"; };
 		DBD454A11D05157800EE528A /* TViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TViewController.h; sourceTree = "<group>"; };
 		DBD454A21D05157800EE528A /* TViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TViewController.m; sourceTree = "<group>"; };
 		DBD454A31D05157800EE528A /* TViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TViewController.xib; sourceTree = "<group>"; };
-		DBD454A61D05163400EE528A /* ExtensionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionViewController.h; sourceTree = "<group>"; };
-		DBD454A71D05163400EE528A /* ExtensionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionViewController.m; sourceTree = "<group>"; };
-		DBD454A91D0518A600EE528A /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
-		DBD454AA1D0518A600EE528A /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
-		DBD454AE1D0529E900EE528A /* RealmTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmTableViewController.h; sourceTree = "<group>"; };
-		DBD454AF1D0529E900EE528A /* RealmTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmTableViewController.m; sourceTree = "<group>"; };
 		DBDBC8E71D0581EC004AAD8C /* JSQMessagesAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSQMessagesAssets.bundle; sourceTree = "<group>"; };
 		DBDBC8E91D0581EC004AAD8C /* JSQSystemSoundPlayer+JSQMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSQSystemSoundPlayer+JSQMessages.h"; sourceTree = "<group>"; };
 		DBDBC8EA1D0581EC004AAD8C /* JSQSystemSoundPlayer+JSQMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSQSystemSoundPlayer+JSQMessages.m"; sourceTree = "<group>"; };
@@ -337,6 +326,7 @@
 		DBE132861CFFDE8500FC702C /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		DBE132871CFFDE8500FC702C /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		EA104319D2A9027B30AF6607 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FC7FEFB8875495FA77E3BD47 /* Pods-Frame_USE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frame_USE.release.xcconfig"; path = "Pods/Target Support Files/Pods-Frame_USE/Pods-Frame_USE.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +337,7 @@
 				DB7E26321D0E914F00839CAE /* CoreText.framework in Frameworks */,
 				DB7E26301D0E888B00839CAE /* libicucore.tbd in Frameworks */,
 				F743B084AF8F23856795168D /* libPods.a in Frameworks */,
+				64F3F5DC6EC05B43722B25C5 /* libPods-Frame_USE.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +363,8 @@
 			children = (
 				EA104319D2A9027B30AF6607 /* Pods.debug.xcconfig */,
 				3ACD5885FDFD93949FDFF5D3 /* Pods.release.xcconfig */,
+				BD7242682FD739506A8732B5 /* Pods-Frame_USE.debug.xcconfig */,
+				FC7FEFB8875495FA77E3BD47 /* Pods-Frame_USE.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -382,6 +375,7 @@
 				DB7E26311D0E914F00839CAE /* CoreText.framework */,
 				DB7E262F1D0E888B00839CAE /* libicucore.tbd */,
 				79495F2833E2DFC70A769284 /* libPods.a */,
+				C0792C4B33FEA3829F9E7AB2 /* libPods-Frame_USE.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -550,25 +544,8 @@
 				DB8403AD1D06EA05008F4F66 /* 轮播器 */,
 				DBE0E0631D06AFFA00970452 /* YYKit */,
 				DBDBC8E21D05811D004AAD8C /* JSQM */,
-				DBD454961D0506DF00EE528A /* Realm */,
 			);
 			path = SubPage;
-			sourceTree = "<group>";
-		};
-		DBD454961D0506DF00EE528A /* Realm */ = {
-			isa = PBXGroup;
-			children = (
-				DBD454971D05082200EE528A /* RealmViewController.h */,
-				DBD454981D05082200EE528A /* RealmViewController.m */,
-				DBD4549A1D05147300EE528A /* RealmViewController.xib */,
-				DBD454AE1D0529E900EE528A /* RealmTableViewController.h */,
-				DBD454AF1D0529E900EE528A /* RealmTableViewController.m */,
-				DBD454A61D05163400EE528A /* ExtensionViewController.h */,
-				DBD454A71D05163400EE528A /* ExtensionViewController.m */,
-				DBD454A91D0518A600EE528A /* Book.h */,
-				DBD454AA1D0518A600EE528A /* Book.m */,
-			);
-			path = Realm;
 			sourceTree = "<group>";
 		};
 		DBDBC8E21D05811D004AAD8C /* JSQM */ = {
@@ -880,12 +857,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBE132761CFFDDC300FC702C /* Build configuration list for PBXNativeTarget "Frame_USE" */;
 			buildPhases = (
-				FD041C2C93CA9C655C4188A3 /* Check Pods Manifest.lock */,
+				FD041C2C93CA9C655C4188A3 /* [CP] Check Pods Manifest.lock */,
 				DBE132451CFFDDC300FC702C /* Sources */,
 				DBE132461CFFDDC300FC702C /* Frameworks */,
 				DBE132471CFFDDC300FC702C /* Resources */,
-				01CFF663760F7B2D6921E489 /* Embed Pods Frameworks */,
-				BDCB3D8F6AE1C539C3BEB110 /* Copy Pods Resources */,
+				01CFF663760F7B2D6921E489 /* [CP] Embed Pods Frameworks */,
+				BDCB3D8F6AE1C539C3BEB110 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -981,7 +958,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBDBC96D1D0581EC004AAD8C /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
-				DBD4549B1D05147300EE528A /* RealmViewController.xib in Resources */,
 				DBDBC9751D0581EC004AAD8C /* JSQMessagesToolbarContentView.xib in Resources */,
 				DB7E26271D0E83A600839CAE /* StatusViewController.xib in Resources */,
 				DBE1325C1CFFDDC300FC702C /* LaunchScreen.storyboard in Resources */,
@@ -1019,44 +995,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01CFF663760F7B2D6921E489 /* Embed Pods Frameworks */ = {
+		01CFF663760F7B2D6921E489 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Frame_USE/Pods-Frame_USE-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BDCB3D8F6AE1C539C3BEB110 /* Copy Pods Resources */ = {
+		BDCB3D8F6AE1C539C3BEB110 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Frame_USE/Pods-Frame_USE-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD041C2C93CA9C655C4188A3 /* Check Pods Manifest.lock */ = {
+		FD041C2C93CA9C655C4188A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1071,7 +1047,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBD454991D05082200EE528A /* RealmViewController.m in Sources */,
 				DB88D2201D07EBBE000AAF18 /* PicPlayCollectionViewController.m in Sources */,
 				DB736F151D1154B4000BFE1E /* BTViewController.m in Sources */,
 				DBDBC9661D0581EC004AAD8C /* JSQVideoMediaItem.m in Sources */,
@@ -1107,10 +1082,8 @@
 				DBC63ED31D1262C80034CE94 /* TestViewController.m in Sources */,
 				DBDBC9521D0581EC004AAD8C /* JSQMessagesKeyboardController.m in Sources */,
 				DBDBC97D1D058305004AAD8C /* DemoModelData.m in Sources */,
-				DBD454A81D05163400EE528A /* ExtensionViewController.m in Sources */,
 				DBDBC9681D0581EC004AAD8C /* JSQMessagesCollectionView.m in Sources */,
 				DBDBC94D1D0581EC004AAD8C /* NSString+JSQMessages.m in Sources */,
-				DBD454B01D0529E900EE528A /* RealmTableViewController.m in Sources */,
 				DB7E26351D0E918500839CAE /* CTView.m in Sources */,
 				DBC63EC81D1247A00034CE94 /* FourViewController.m in Sources */,
 				DBDBC9551D0581EC004AAD8C /* JSQMessagesAvatarImageFactory.m in Sources */,
@@ -1125,7 +1098,6 @@
 				DBDBC9651D0581EC004AAD8C /* JSQPhotoMediaItem.m in Sources */,
 				DBDBC9561D0581EC004AAD8C /* JSQMessagesBubbleImageFactory.m in Sources */,
 				DBDBC9711D0581EC004AAD8C /* JSQMessagesLoadEarlierHeaderView.m in Sources */,
-				DBD454AB1D0518A600EE528A /* Book.m in Sources */,
 				DBDBC9761D0581EC004AAD8C /* JSQMessagesTypingIndicatorFooterView.m in Sources */,
 				DBE132881CFFDE8500FC702C /* MainTableViewController.m in Sources */,
 				DBDBC94E1D0581EC004AAD8C /* UIColor+JSQMessages.m in Sources */,
@@ -1292,7 +1264,7 @@
 		};
 		DBE132771CFFDDC300FC702C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA104319D2A9027B30AF6607 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = BD7242682FD739506A8732B5 /* Pods-Frame_USE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1304,10 +1276,8 @@
 					"$(inherited)",
 					"-ObjC",
 					"-l\"JSQSystemSoundPlayer\"",
-					"-l\"Realm\"",
 					"-l\"YYKit\"",
 					"-l\"c++\"",
-					"-l\"realm-ios\"",
 					"-l\"sqlite3\"",
 					"-l\"z\"",
 					"-framework",
@@ -1346,7 +1316,7 @@
 		};
 		DBE132781CFFDDC300FC702C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3ACD5885FDFD93949FDFF5D3 /* Pods.release.xcconfig */;
+			baseConfigurationReference = FC7FEFB8875495FA77E3BD47 /* Pods-Frame_USE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1358,10 +1328,8 @@
 					"$(inherited)",
 					"-ObjC",
 					"-l\"JSQSystemSoundPlayer\"",
-					"-l\"Realm\"",
 					"-l\"YYKit\"",
 					"-l\"c++\"",
-					"-l\"realm-ios\"",
 					"-l\"sqlite3\"",
 					"-l\"z\"",
 					"-framework",
