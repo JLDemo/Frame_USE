@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *fTextView;
 @property (weak, nonatomic) IBOutlet UIProgressView *fProgressView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *fActivityIndicatorView;
+@property (weak, nonatomic) IBOutlet UILabel *testLabel;
 
 @end

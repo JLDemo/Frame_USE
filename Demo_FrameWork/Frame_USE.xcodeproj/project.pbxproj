@@ -28,6 +28,7 @@
 		DB8020111D1A7F98004B6516 /* PersentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8020101D1A7F98004B6516 /* PersentView.m */; };
 		DB81C5181D2E36370086B6FF /* DowFamiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81C5161D2E36370086B6FF /* DowFamiViewController.m */; };
 		DB81C5191D2E36370086B6FF /* DowFamiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB81C5171D2E36370086B6FF /* DowFamiViewController.xib */; };
+		DB81C5201D2E550E0086B6FF /* msyh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB81C51E1D2E550E0086B6FF /* msyh.ttf */; };
 		DB8403B01D06EB1D008F4F66 /* PicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */; };
 		DB8403B21D06EB7D008F4F66 /* PicPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */; };
 		DB887FA11D0837790024D9A0 /* DefTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB887F9F1D0837790024D9A0 /* DefTabBarViewController.m */; };
@@ -110,6 +111,7 @@
 		DBE132671CFFDDC300FC702C /* Demo_FrameWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE132661CFFDDC300FC702C /* Demo_FrameWorkTests.m */; };
 		DBE132721CFFDDC300FC702C /* Demo_FrameWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE132711CFFDDC300FC702C /* Demo_FrameWorkUITests.m */; };
 		DBE132881CFFDE8500FC702C /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE132871CFFDE8500FC702C /* MainTableViewController.m */; };
+		DBF6F5C01D2F3312003D4ED9 /* 华康娃娃体.TTF in Resources */ = {isa = PBXBuildFile; fileRef = DBF6F5BF1D2F3312003D4ED9 /* 华康娃娃体.TTF */; };
 		F743B084AF8F23856795168D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79495F2833E2DFC70A769284 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -169,6 +171,7 @@
 		DB81C5151D2E36370086B6FF /* DowFamiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DowFamiViewController.h; sourceTree = "<group>"; };
 		DB81C5161D2E36370086B6FF /* DowFamiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DowFamiViewController.m; sourceTree = "<group>"; };
 		DB81C5171D2E36370086B6FF /* DowFamiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DowFamiViewController.xib; sourceTree = "<group>"; };
+		DB81C51E1D2E550E0086B6FF /* msyh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msyh.ttf; sourceTree = "<group>"; };
 		DB8403AE1D06EB1D008F4F66 /* PicPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicPlayViewController.h; sourceTree = "<group>"; };
 		DB8403AF1D06EB1D008F4F66 /* PicPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicPlayViewController.m; sourceTree = "<group>"; };
 		DB8403B11D06EB7D008F4F66 /* PicPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicPlayViewController.xib; sourceTree = "<group>"; };
@@ -330,6 +333,7 @@
 		DBE132731CFFDDC300FC702C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBE132861CFFDE8500FC702C /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		DBE132871CFFDE8500FC702C /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		DBF6F5BF1D2F3312003D4ED9 /* 华康娃娃体.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华康娃娃体.TTF"; sourceTree = "<group>"; };
 		EA104319D2A9027B30AF6607 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FC7FEFB8875495FA77E3BD47 /* Pods-Frame_USE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frame_USE.release.xcconfig"; path = "Pods/Target Support Files/Pods-Frame_USE/Pods-Frame_USE.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -805,6 +809,8 @@
 		DBE1324C1CFFDDC300FC702C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DBF6F5BF1D2F3312003D4ED9 /* 华康娃娃体.TTF */,
+				DB81C51E1D2E550E0086B6FF /* msyh.ttf */,
 				DBE1325A1CFFDDC300FC702C /* LaunchScreen.storyboard */,
 				DBE1325D1CFFDDC300FC702C /* Info.plist */,
 				DBE1324D1CFFDDC300FC702C /* main.m */,
@@ -978,10 +984,12 @@
 				DB81C5191D2E36370086B6FF /* DowFamiViewController.xib in Resources */,
 				DB7E26271D0E83A600839CAE /* StatusViewController.xib in Resources */,
 				DBE1325C1CFFDDC300FC702C /* LaunchScreen.storyboard in Resources */,
+				DB81C5201D2E550E0086B6FF /* msyh.ttf in Resources */,
 				DBC63ED41D1262C80034CE94 /* TestViewController.xib in Resources */,
 				DBDBC9721D0581EC004AAD8C /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				DB736F161D1154B4000BFE1E /* BTViewController.xib in Resources */,
 				DBE132591CFFDDC300FC702C /* Assets.xcassets in Resources */,
+				DBF6F5C01D2F3312003D4ED9 /* 华康娃娃体.TTF in Resources */,
 				DBDBC96B1D0581EC004AAD8C /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
 				DBC63EAB1D122F570034CE94 /* js.html in Resources */,
 				DBDBC94A1D0581EC004AAD8C /* JSQMessagesAssets.bundle in Resources */,

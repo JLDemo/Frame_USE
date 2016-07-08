@@ -11,6 +11,7 @@
                 <outlet property="fProgressView" destination="rEd-0m-hA4" id="6SF-82-jyy"/>
                 <outlet property="fTableView" destination="2YX-tg-n8K" id="ABD-US-YOW"/>
                 <outlet property="fTextView" destination="tJY-Kf-ROJ" id="cvN-xS-UBp"/>
+                <outlet property="testLabel" destination="Sup-HO-2ts" id="xCv-pp-Ryu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -40,6 +41,12 @@
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="gAX-e3-EYH">
                     <rect key="frame" x="232" y="364" width="20" height="20"/>
                 </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="作创意空间快速无线上网" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sup-HO-2ts">
+                    <rect key="frame" x="37" y="400" width="226" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

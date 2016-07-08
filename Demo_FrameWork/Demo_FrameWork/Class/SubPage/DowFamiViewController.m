@@ -24,6 +24,7 @@
         NSUInteger sampleIndex = [_fontNames indexOfObject:fontName];
         _fTextView.text = [_fontSamples objectAtIndex:sampleIndex];
         _fTextView.font = [UIFont fontWithName:fontName size:24.];
+        self.testLabel.font = [UIFont fontWithName:fontName size:24.];
         return;
     }
     
@@ -165,12 +166,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.testLabel.font = [UIFont fontWithName:@"DFPWaWaW5-GB" size:17]; // Microsoft YaHei  DFPWaWaW5-GB
+
     
     self.fontNames = [[NSArray alloc] initWithObjects:
                       @"STXingkai-SC-Light",
                       @"DFWaWaSC-W5",
                       @"FZLTXHK--GBK1-0",
-                      @"STLibian-SC-Regular",
+                      @"Microsoft YaHei", // Microsoft YaHei   STLibian-SC-Regular
                       @"LiHeiPro",
                       @"HiraginoSansGB-W3",
                       nil];
