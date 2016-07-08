@@ -26,6 +26,9 @@
 		DB8020071D1A6882004B6516 /* LoadIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8020061D1A6882004B6516 /* LoadIndicatorViewController.m */; };
 		DB80200A1D1A6897004B6516 /* LoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8020091D1A6897004B6516 /* LoadView.m */; };
 		DB8020111D1A7F98004B6516 /* PersentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8020101D1A7F98004B6516 /* PersentView.m */; };
+		DB8148261D2F8B72001B35F9 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8148241D2F8B72001B35F9 /* PageViewController.m */; };
+		DB8148271D2F8B72001B35F9 /* PageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8148251D2F8B72001B35F9 /* PageViewController.xib */; };
+		DB81482D1D2F97AD001B35F9 /* BasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81482C1D2F97AD001B35F9 /* BasePageViewController.m */; };
 		DB81C5181D2E36370086B6FF /* DowFamiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81C5161D2E36370086B6FF /* DowFamiViewController.m */; };
 		DB81C5191D2E36370086B6FF /* DowFamiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB81C5171D2E36370086B6FF /* DowFamiViewController.xib */; };
 		DB81C5201D2E550E0086B6FF /* msyh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB81C51E1D2E550E0086B6FF /* msyh.ttf */; };
@@ -168,6 +171,11 @@
 		DB8020091D1A6897004B6516 /* LoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadView.m; sourceTree = "<group>"; };
 		DB80200F1D1A7F98004B6516 /* PersentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersentView.h; sourceTree = "<group>"; };
 		DB8020101D1A7F98004B6516 /* PersentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersentView.m; sourceTree = "<group>"; };
+		DB8148231D2F8B72001B35F9 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		DB8148241D2F8B72001B35F9 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		DB8148251D2F8B72001B35F9 /* PageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageViewController.xib; sourceTree = "<group>"; };
+		DB81482B1D2F97AD001B35F9 /* BasePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePageViewController.h; sourceTree = "<group>"; };
+		DB81482C1D2F97AD001B35F9 /* BasePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePageViewController.m; sourceTree = "<group>"; };
 		DB81C5151D2E36370086B6FF /* DowFamiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DowFamiViewController.h; sourceTree = "<group>"; };
 		DB81C5161D2E36370086B6FF /* DowFamiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DowFamiViewController.m; sourceTree = "<group>"; };
 		DB81C5171D2E36370086B6FF /* DowFamiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DowFamiViewController.xib; sourceTree = "<group>"; };
@@ -460,6 +468,18 @@
 			name = "环形按钮";
 			sourceTree = "<group>";
 		};
+		DB8148221D2F8B5D001B35F9 /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DB8148231D2F8B72001B35F9 /* PageViewController.h */,
+				DB8148241D2F8B72001B35F9 /* PageViewController.m */,
+				DB8148251D2F8B72001B35F9 /* PageViewController.xib */,
+				DB81482B1D2F97AD001B35F9 /* BasePageViewController.h */,
+				DB81482C1D2F97AD001B35F9 /* BasePageViewController.m */,
+			);
+			name = PageViewController;
+			sourceTree = "<group>";
+		};
 		DB81C5141D2E36070086B6FF /* 下载字体 */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,6 +572,7 @@
 		DBD454951D0506DF00EE528A /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				DB8148221D2F8B5D001B35F9 /* PageViewController */,
 				DB81C5141D2E36070086B6FF /* 下载字体 */,
 				DB80200B1D1A7F28004B6516 /* 环形按钮 */,
 				DB8020041D1A686B004B6516 /* loadIndicator */,
@@ -988,6 +1009,7 @@
 				DBC63ED41D1262C80034CE94 /* TestViewController.xib in Resources */,
 				DBDBC9721D0581EC004AAD8C /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				DB736F161D1154B4000BFE1E /* BTViewController.xib in Resources */,
+				DB8148271D2F8B72001B35F9 /* PageViewController.xib in Resources */,
 				DBE132591CFFDDC300FC702C /* Assets.xcassets in Resources */,
 				DBF6F5C01D2F3312003D4ED9 /* 华康娃娃体.TTF in Resources */,
 				DBDBC96B1D0581EC004AAD8C /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
@@ -1076,6 +1098,7 @@
 				DB736F151D1154B4000BFE1E /* BTViewController.m in Sources */,
 				DBDBC9661D0581EC004AAD8C /* JSQVideoMediaItem.m in Sources */,
 				DB88D2241D07EF2F000AAF18 /* JLCell.m in Sources */,
+				DB81482D1D2F97AD001B35F9 /* BasePageViewController.m in Sources */,
 				DBDBC96A1D0581EC004AAD8C /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
 				DBDBC95F1D0581EC004AAD8C /* JSQAudioMediaItem.m in Sources */,
 				DBE132511CFFDDC300FC702C /* AppDelegate.m in Sources */,
@@ -1115,6 +1138,7 @@
 				DBC63EC21D12478A0034CE94 /* SecondViewController.m in Sources */,
 				DB736F191D1154CA000BFE1E /* JL3DView.m in Sources */,
 				DB8AE6FB1D1935A600B28713 /* ScoreView.m in Sources */,
+				DB8148261D2F8B72001B35F9 /* PageViewController.m in Sources */,
 				DB736F0B1D1127D4000BFE1E /* InvertTableViewController.m in Sources */,
 				DB7E262B1D0E856A00839CAE /* RCLabel.m in Sources */,
 				DBDBC9511D0581EC004AAD8C /* UIView+JSQMessages.m in Sources */,

@@ -49,17 +49,18 @@
     [self addItemTitle:@"星级评价" class:@"ScoreViewController"];  // ScoreViewController
     [self addItemTitle:@"❤️型/环形百分比,加载指示器" class:@"LoadIndicatorViewController"]; //
     [self addItemTitle:@"环形按钮" class:@"CircleBtnViewController"]; //
-    [self addItemTitle:@"下载字体" class:@"DowFamiViewController"]; //  33
+    [self addItemTitle:@"下载字体" class:@"DowFamiViewController"]; //
+    [self addItemTitle:@"PageViewController" class:@"BasePageViewController"]; //  PageViewController
     
     
     
-//    Class class = NSClassFromString(@"DowFamiViewController");
-//    UIViewController *vc = [[class alloc] init];
-//    [self.navigationController pushViewController:vc animated:YES];
-    NSArray <NSString *>*array = [UIFont familyNames];
-    for (NSString *name in array) {
-        NSLog(@"%@",name);
-    }
+    Class class = NSClassFromString(@"BasePageViewController");
+    UIViewController *vc = [[class alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+//    NSArray <NSString *>*array = [UIFont familyNames];
+//    for (NSString *name in array) {
+//        NSLog(@"%@",name);
+//    }
     
 }
 
