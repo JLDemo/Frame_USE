@@ -20,16 +20,19 @@
     self.pageTitles = @[@"111", @"2222", @"33333", @"4444"];
     
     NSDictionary *options = @{
-                              UIPageViewControllerOptionSpineLocationKey : @(UIPageViewControllerSpineLocationMin)
+                              UIPageViewControllerOptionSpineLocationKey : @(UIPageViewControllerSpineLocationMid)
                               };
-    
-    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:options];
+//    UIPageViewController
+    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:options];
     self.pageViewController.view.frame = [UIScreen mainScreen].bounds;
     self.pageViewController.dataSource = self;
     self.pageViewController.delegate = self;
+    self.pageViewController.doubleSided = YES;
+    
     
     PageViewController *initVC = [self vidwControllerAtIndex:0];
-    [self.pageViewController setViewControllers:@[initVC] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    PageViewController *initVC1 = [self vidwControllerAtIndex:1];
+    [self.pageViewController setViewControllers:@[initVC, initVC1] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
     [self addChildViewController:self.pageViewController];
     [self.view addSubview:self.pageViewController.view];
@@ -55,22 +58,13 @@
 #pragma mark - PageViewControllerDataSource
 
 -(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
-
 {
-    
     NSUInteger index = ((PageViewController *)viewController).pageIndex;
-    
-    
-    
     if (index==0||index==NSNotFound) {
-        
         return nil;
-        
     }
-    
     index--;
     return [self vidwControllerAtIndex:index];
-    
 }
 
 -(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
@@ -88,25 +82,14 @@
     
 }
 //显示点的数量
-
 -(NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
-
 {
-    
     return [self.pageTitles count];
-    
 }
 
 //初始化选择哪一页
-
--(NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
-
-{
-    
+-(NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
     return 0;
-    
-    
-    
 }
 
 

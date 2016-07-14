@@ -50,11 +50,12 @@
     [self addItemTitle:@"❤️型/环形百分比,加载指示器" class:@"LoadIndicatorViewController"]; //
     [self addItemTitle:@"环形按钮" class:@"CircleBtnViewController"]; //
     [self addItemTitle:@"下载字体" class:@"DowFamiViewController"]; //
-    [self addItemTitle:@"PageViewController" class:@"BasePageViewController"]; //  PageViewController
+    [self addItemTitle:@"PageViewController" class:@"BasePageViewController"]; //
+    [self addItemTitle:@"输入密码不清空" class:@"PswViewController"]; //  PswViewController
     
     
     
-    Class class = NSClassFromString(@"BasePageViewController");
+    Class class = NSClassFromString(@"PswViewController");
     UIViewController *vc = [[class alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 //    NSArray <NSString *>*array = [UIFont familyNames];

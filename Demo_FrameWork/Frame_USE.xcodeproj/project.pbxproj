@@ -53,6 +53,9 @@
 		DBC63ECB1D124E3D0034CE94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC63ECA1D124E3D0034CE94 /* ViewController.m */; };
 		DBC63ED31D1262C80034CE94 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC63ED11D1262C80034CE94 /* TestViewController.m */; };
 		DBC63ED41D1262C80034CE94 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC63ED21D1262C80034CE94 /* TestViewController.xib */; };
+		DBD1DBD41D3724340081D0C5 /* PswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD1DBD21D3724340081D0C5 /* PswViewController.m */; };
+		DBD1DBD51D3724340081D0C5 /* PswViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD1DBD31D3724340081D0C5 /* PswViewController.xib */; };
+		DBD1DBD81D37245F0081D0C5 /* PSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD1DBD71D37245F0081D0C5 /* PSTextField.m */; };
 		DBD454A41D05157800EE528A /* TViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD454A21D05157800EE528A /* TViewController.m */; };
 		DBD454A51D05157800EE528A /* TViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD454A31D05157800EE528A /* TViewController.xib */; };
 		DBDBC94A1D0581EC004AAD8C /* JSQMessagesAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DBDBC8E71D0581EC004AAD8C /* JSQMessagesAssets.bundle */; };
@@ -219,6 +222,11 @@
 		DBC63ED01D1262C80034CE94 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		DBC63ED11D1262C80034CE94 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		DBC63ED21D1262C80034CE94 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		DBD1DBD11D3724340081D0C5 /* PswViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PswViewController.h; sourceTree = "<group>"; };
+		DBD1DBD21D3724340081D0C5 /* PswViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PswViewController.m; sourceTree = "<group>"; };
+		DBD1DBD31D3724340081D0C5 /* PswViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PswViewController.xib; sourceTree = "<group>"; };
+		DBD1DBD61D37245F0081D0C5 /* PSTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTextField.h; sourceTree = "<group>"; };
+		DBD1DBD71D37245F0081D0C5 /* PSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTextField.m; sourceTree = "<group>"; };
 		DBD454A11D05157800EE528A /* TViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TViewController.h; sourceTree = "<group>"; };
 		DBD454A21D05157800EE528A /* TViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TViewController.m; sourceTree = "<group>"; };
 		DBD454A31D05157800EE528A /* TViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TViewController.xib; sourceTree = "<group>"; };
@@ -569,9 +577,22 @@
 			name = FrameTest;
 			sourceTree = "<group>";
 		};
+		DBD1DBD01D3724190081D0C5 /* 自定义密码输入框 */ = {
+			isa = PBXGroup;
+			children = (
+				DBD1DBD61D37245F0081D0C5 /* PSTextField.h */,
+				DBD1DBD71D37245F0081D0C5 /* PSTextField.m */,
+				DBD1DBD11D3724340081D0C5 /* PswViewController.h */,
+				DBD1DBD21D3724340081D0C5 /* PswViewController.m */,
+				DBD1DBD31D3724340081D0C5 /* PswViewController.xib */,
+			);
+			name = "自定义密码输入框";
+			sourceTree = "<group>";
+		};
 		DBD454951D0506DF00EE528A /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				DBD1DBD01D3724190081D0C5 /* 自定义密码输入框 */,
 				DB8148221D2F8B5D001B35F9 /* PageViewController */,
 				DB81C5141D2E36070086B6FF /* 下载字体 */,
 				DB80200B1D1A7F28004B6516 /* 环形按钮 */,
@@ -1007,6 +1028,7 @@
 				DBE1325C1CFFDDC300FC702C /* LaunchScreen.storyboard in Resources */,
 				DB81C5201D2E550E0086B6FF /* msyh.ttf in Resources */,
 				DBC63ED41D1262C80034CE94 /* TestViewController.xib in Resources */,
+				DBD1DBD51D3724340081D0C5 /* PswViewController.xib in Resources */,
 				DBDBC9721D0581EC004AAD8C /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				DB736F161D1154B4000BFE1E /* BTViewController.xib in Resources */,
 				DB8148271D2F8B72001B35F9 /* PageViewController.xib in Resources */,
@@ -1109,6 +1131,7 @@
 				DBDBC9531D0581EC004AAD8C /* JSQMessagesViewController.m in Sources */,
 				DBDBC96F1D0581EC004AAD8C /* JSQMessagesInputToolbar.m in Sources */,
 				DBDBC95D1D0581EC004AAD8C /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
+				DBD1DBD41D3724340081D0C5 /* PswViewController.m in Sources */,
 				DBDBC95C1D0581EC004AAD8C /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
 				DB80200A1D1A6897004B6516 /* LoadView.m in Sources */,
 				DBC63EC51D1247950034CE94 /* ThirdViewController.m in Sources */,
@@ -1116,6 +1139,7 @@
 				DBD454A41D05157800EE528A /* TViewController.m in Sources */,
 				DBDBC94B1D0581EC004AAD8C /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				DB0D278C1D1B6FC00030E293 /* CircleBtnViewController.m in Sources */,
+				DBD1DBD81D37245F0081D0C5 /* PSTextField.m in Sources */,
 				DBE0E06D1D06B09500970452 /* YYKitViewController.m in Sources */,
 				DB736F0F1D112D20000BFE1E /* JLTVCell.m in Sources */,
 				DB8AE6F81D19357E00B28713 /* ScoreViewController.m in Sources */,
